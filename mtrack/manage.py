@@ -15,9 +15,10 @@ sys.path.append(os.path.join(filedir,'rapidsms-generic'))
 sys.path.append(os.path.join(filedir,'rapidsms-httprouter'))
 sys.path.append(os.path.join(filedir,'rapidsms-polls'))
 sys.path.append(os.path.join(filedir,'rapidsms-script'))
-sys.path.append(os.path.join(filedir,'rapidsms-rapidsms-uregister'))
+sys.path.append(os.path.join(filedir,'rapidsms-uregister'))
 sys.path.append(os.path.join(filedir,'rapidsms-ureport'))
 sys.path.append(os.path.join(filedir,'rapidsms-xforms'))
+sys.path.append(os.path.join(filedir,'healthmodels'))
 sys.path.append(os.path.join(filedir,'django-eav'))
 
 if __name__ == "__main__":

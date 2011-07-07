@@ -34,3 +34,6 @@
 [submodule "mtrack/rapidsms-contact"]
 	path = mtrack/rapidsms-contact
 	url = git://github.com/mossplix/rapidsms-contact.git
+[submodule "mtrack/healthmodels"]
+	path = mtrack/healthmodels
+	url = git://github.com/daveycrockett/healthmodels.git

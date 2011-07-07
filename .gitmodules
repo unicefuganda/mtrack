@@ -1,3 +1,30 @@
 [submodule "mtrack/rapidsms-generic"]
 	path = mtrack/rapidsms-generic
 	url = git://github.com/daveycrockett/rapidsms-generic.git
+[submodule "mtrack/rapidsms-unregister"]
+	path = mtrack/rapidsms-unregister
+	url = git://github.com/daveycrockett/rapidsms-unregister.git
+[submodule "mtrack/rapidsms"]
+	path = mtrack/rapidsms
+	url = git://github.com/daveycrockett/rapidsms.git
+[submodule "mtrack/rapidsms-ureport"]
+	path = mtrack/rapidsms-ureport
+	url = git://github.com/daveycrockett/rapidsms-ureport.git
+[submodule "mtrack/rapidsms-script"]
+	path = mtrack/rapidsms-script
+	url = git://github.com/daveycrockett/rapidsms-script.git
+[submodule "mtrack/rapidsms-httrouter"]
+	path = mtrack/rapidsms-httrouter
+	url = git://github.com/daveycrockett/rapidsms-httprouter.git
+[submodule "mtrack/rapidsms-cvs"]
+	path = mtrack/rapidsms-cvs
+	url = git://github.com/daveycrockett/rapidsms-cvs.git
+[submodule "mtrack/rapidsms-polls"]
+	path = mtrack/rapidsms-polls
+	url = git://github.com/daveycrockett/rapidsms-polls.git
+[submodule "mtrack/django-eav"]
+	path = mtrack/django-eav
+	url = git://github.com/daveycrockett/eav.git
+[submodule "mtrack/rapidsms-auth"]
+	path = mtrack/rapidsms-auth
+	url = git://github.com/daveycrockett/auth.git

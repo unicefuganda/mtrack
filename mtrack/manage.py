@@ -16,6 +16,7 @@ sys.path.append(os.path.join(filedir,'rapidsms-polls'))
 sys.path.append(os.path.join(filedir,'rapidsms-script'))
 sys.path.append(os.path.join(filedir,'rapidsms-rapidsms-uregister'))
 sys.path.append(os.path.join(filedir,'rapidsms-ureport'))
+sys.path.append(os.path.join(filedir,'rapidsms-xforms'))
 sys.path.append(os.path.join(filedir,'django-eav'))
 
 from generic.views import generic

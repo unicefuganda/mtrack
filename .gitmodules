@@ -28,3 +28,6 @@
 [submodule "mtrack/rapidsms-auth"]
 	path = mtrack/rapidsms-auth
 	url = git://github.com/daveycrockett/auth.git
+[submodule "mtrack/rapidsms-xforms"]
+	path = mtrack/rapidsms-xforms
+	url = git://github.com/daveycrockett/rapidsms-xforms.git

@@ -1,0 +1,3 @@
+[submodule "mtrack/rapidsms-generic"]
+	path = mtrack/rapidsms-generic
+	url = git://github.com/daveycrockett/rapidsms-generic.git

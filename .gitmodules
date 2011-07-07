@@ -31,3 +31,6 @@
 [submodule "mtrack/rapidsms-xforms"]
 	path = mtrack/rapidsms-xforms
 	url = git://github.com/daveycrockett/rapidsms-xforms.git
+[submodule "mtrack/rapidsms-contact"]
+	path = mtrack/rapidsms-contact
+	url = git://github.com/mossplix/rapidsms-contact.git

@@ -38,7 +38,6 @@ INSTALLED_BACKENDS = {
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
     "djtables",
-    "uganda_common",
     "rapidsms",
     "mptt",
     "uni_form",

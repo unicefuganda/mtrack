@@ -7,17 +7,18 @@ import settings
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
-sys.path.append(os.path.join(filedir,'..'))
-sys.path.append(os.path.join(filedir,'..','rapidsms'))
-sys.path.append(os.path.join(filedir,'..','rapidsms','lib'))
-sys.path.append(os.path.join(filedir,'..','rapidsms','lib','rapidsms'))
-sys.path.append(os.path.join(filedir,'..','rapidsms','lib','rapidsms','contrib'))
-sys.path.append(os.path.join(filedir,'..','submodules','django-cpserver'))
-sys.path.append(os.path.join(filedir,'..','submodules','dimagi-utils'))
-sys.path.append(os.path.join(filedir,'..','submodules','django-tablib'))
-sys.path.append(os.path.join(filedir,'..','submodules','tablib'))
-sys.path.append(os.path.join(filedir,'..','submodules','auditcare'))
-sys.path.append(os.path.join(filedir,'..','submodules','couchlog'))
+sys.path.append(os.path.join(filedir,'rapidsms','lib'))
+sys.path.append(os.path.join(filedir,'rapidsms-auth'))
+sys.path.append(os.path.join(filedir,'rapidsms-cvs'))
+sys.path.append(os.path.join(filedir,'rapidsms-generic'))
+sys.path.append(os.path.join(filedir,'rapidsms-httprouter'))
+sys.path.append(os.path.join(filedir,'rapidsms-polls'))
+sys.path.append(os.path.join(filedir,'rapidsms-script'))
+sys.path.append(os.path.join(filedir,'rapidsms-rapidsms-uregister'))
+sys.path.append(os.path.join(filedir,'rapidsms-ureport'))
+sys.path.append(os.path.join(filedir,'django-eav'))
+
+from generic.views import generic
 
 if __name__ == "__main__":
     execute_manager(settings)

@@ -13,9 +13,6 @@
 [submodule "mtrack/rapidsms-script"]
 	path = mtrack/rapidsms-script
 	url = git://github.com/daveycrockett/rapidsms-script.git
-[submodule "mtrack/rapidsms-httrouter"]
-	path = mtrack/rapidsms-httrouter
-	url = git://github.com/daveycrockett/rapidsms-httprouter.git
 [submodule "mtrack/rapidsms-cvs"]
 	path = mtrack/rapidsms-cvs
 	url = git://github.com/daveycrockett/rapidsms-cvs.git
@@ -37,6 +34,9 @@
 [submodule "mtrack/healthmodels"]
 	path = mtrack/healthmodels
 	url = git://github.com/daveycrockett/healthmodels.git
+[submodule "mtrack/rapidsms-httprouter"]
+	path = mtrack/rapidsms-httprouter
+	url = git://github.com/daveycrockett/rapidsms-httprouter
 [submodule "mtrack/email-reports"]
 	path = mtrack/email-reports
 	url = git://github.com/dimagi/email-reports

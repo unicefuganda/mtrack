@@ -180,6 +180,16 @@ import os
 import tempfile
 import sys
 
+try:
+    import sys
+    if os.environ.has_key('LOCAL_SETTINGS'):
+        # the LOCAL_SETTINGS environment variable is used by the build server
+        sys.path.insert(0, os.path.dirname(os.environ['LOCAL_SETTINGS']))
+        from settings_test import *
+    else: 
+        from localsettings import *
+except ImportError:
+    pass
 if 'test' in sys.argv:
     for db_name in DATABASES:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(

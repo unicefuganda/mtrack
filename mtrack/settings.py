@@ -55,8 +55,6 @@ INSTALLED_APPS = [
     "rapidsms.contrib.default",
 #    "rapidsms.contrib.messaging",
 #    "rapidsms.contrib.registration",
-    "rapidsms.contrib.locations",
-    "rapidsms.contrib.locations.nested",
     "eav",
     "healthmodels",
     "rapidsms_xforms",
@@ -70,7 +68,6 @@ INSTALLED_APPS = [
 ]
 
 SMS_APPS = [
-    "autoregistration",
     "poll",
     "rapidsms_xforms",
 ]

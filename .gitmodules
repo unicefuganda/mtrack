@@ -46,3 +46,6 @@
 [submodule "mtrack/rapidsms-logistics"]
 	path = mtrack/rapidsms-logistics
 	url = git://github.com/dimagi/rapidsms-logistics
+[submodule "mtrack/uganda_common"]
+	path = mtrack/uganda_common
+	url = git://github.com/mossplix/uganda_common

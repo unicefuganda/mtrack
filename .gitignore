@@ -3,3 +3,4 @@
 .settings
 *pyc
 mtrack/localsettings.py
+*~

@@ -55,3 +55,6 @@
 [submodule "mtrack/rapidsms-mtrack"]
 	path = mtrack/rapidsms-mtrack
 	url = git://github.com/unicefuganda/rapidsms-mtrack.git
+[submodule "mtrack/uganda_common"]
+	path = mtrack/uganda_common
+	url = git://github.com/mossplix/uganda_common

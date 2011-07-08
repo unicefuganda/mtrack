@@ -25,6 +25,8 @@ sys.path.append(os.path.join(filedir,'rapidsms-alerts'))
 sys.path.append(os.path.join(filedir,'email-reports'))
 sys.path.append(os.path.join(filedir,'..','lib','dimagi-utils'))
 sys.path.append(os.path.join(filedir,'..','lib','auditcare'))
+sys.path.append(os.path.join(filedir,'uganda_common'))
+sys.path.append(os.path.join(filedir,'rapidsms-unregister'))
 
 if __name__ == "__main__":
     execute_manager(settings)

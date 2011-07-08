@@ -20,6 +20,9 @@ sys.path.append(os.path.join(filedir,'rapidsms-ureport'))
 sys.path.append(os.path.join(filedir,'rapidsms-xforms'))
 sys.path.append(os.path.join(filedir,'healthmodels'))
 sys.path.append(os.path.join(filedir,'django-eav'))
+sys.path.append(os.path.join(filedir,'rapidsms-logistics'))
+sys.path.append(os.path.join(filedir,'rapidsms-alerts'))
+sys.path.append(os.path.join(filedir,'email-reports'))
 
 if __name__ == "__main__":
     execute_manager(settings)

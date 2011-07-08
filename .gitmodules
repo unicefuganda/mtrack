@@ -37,3 +37,12 @@
 [submodule "mtrack/rapidsms-httprouter"]
 	path = mtrack/rapidsms-httprouter
 	url = git://github.com/daveycrockett/rapidsms-httprouter
+[submodule "mtrack/email-reports"]
+	path = mtrack/email-reports
+	url = git://github.com/dimagi/email-reports
+[submodule "mtrack/rapidsms-alerts"]
+	path = mtrack/rapidsms-alerts
+	url = git://github.com/dimagi/rapidsms-alerts
+[submodule "mtrack/rapidsms-logistics"]
+	path = mtrack/rapidsms-logistics
+	url = git://github.com/dimagi/rapidsms-logistics

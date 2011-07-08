@@ -27,6 +27,8 @@ setup(
         'rapidsms-generic',
         'uganda-common',
         'xlrd',
+        'tablib',
+        'django-tablib'
     ],
 
     dependency_links = [

@@ -23,6 +23,8 @@ sys.path.append(os.path.join(filedir,'django-eav'))
 sys.path.append(os.path.join(filedir,'rapidsms-logistics'))
 sys.path.append(os.path.join(filedir,'rapidsms-alerts'))
 sys.path.append(os.path.join(filedir,'email-reports'))
+sys.path.append(os.path.join(filedir,'..','lib','dimagi-utils'))
+sys.path.append(os.path.join(filedir,'..','lib','auditcare'))
 
 if __name__ == "__main__":
     execute_manager(settings)

@@ -52,3 +52,6 @@
 [submodule "lib/auditcare"]
 	path = lib/auditcare
 	url = git://github.com/dimagi/auditcare.git
+[submodule "mtrack/rapidsms-mtrack"]
+	path = mtrack/rapidsms-mtrack
+	url = git://github.com/unicefuganda/rapidsms-mtrack.git

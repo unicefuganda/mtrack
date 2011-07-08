@@ -65,6 +65,10 @@ INSTALLED_APPS = [
     "cvs",
     "generic",
     "contact",
+    "mtrack",
+    "logistics",
+    "email_reports",
+    "alerts"
 ]
 
 SMS_APPS = [
@@ -168,11 +172,8 @@ TEMPLATE_LOADERS = (
 ROOT_URLCONF = "urls"
 
 MAP_KEY="ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
-# since we might hit the database from any thread during testing, the
-# in-memory sqlite database isn't sufficient. it spawns a separate
-# virtual database for each thread, and syncdb is only called for the
-# first. this leads to confusing "no such table" errors. We create
-# a named temporary instance instead.
+COUNTRY="uganda"
+
 import os
 import tempfile
 import sys
@@ -187,8 +188,14 @@ try:
         from localsettings import *
 except ImportError:
     pass
+# since we might hit the database from any thread during testing, the
+# in-memory sqlite database isn't sufficient. it spawns a separate
+# virtual database for each thread, and syncdb is only called for the
+# first. this leads to confusing "no such table" errors. We create
+# a named temporary instance instead.
 if 'test' in sys.argv:
     for db_name in DATABASES:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
             "%s.rapidsms.test.sqlite3" % db_name)
+

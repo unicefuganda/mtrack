@@ -1,7 +1,8 @@
 #!/bin/sh
-cd mtrack
+cd mtrack-project
 for dir in `find . -maxdepth 1 -type d`
 do
-  (cd $dir && git pull)
+  echo $dir
+  (cd $dir && git checkout master && git pull)
 done
 

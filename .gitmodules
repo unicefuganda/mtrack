@@ -1,50 +1,50 @@
-[submodule "mtrack/rapidsms-generic"]
-	path = mtrack/rapidsms-generic
+[submodule "mtrack-project/rapidsms-generic"]
+	path = mtrack-project/rapidsms-generic
 	url = git://github.com/daveycrockett/rapidsms-generic.git
-[submodule "mtrack/rapidsms-unregister"]
-	path = mtrack/rapidsms-unregister
+[submodule "mtrack-project/rapidsms-unregister"]
+	path = mtrack-project/rapidsms-unregister
 	url = git://github.com/daveycrockett/rapidsms-unregister.git
-[submodule "mtrack/rapidsms"]
-	path = mtrack/rapidsms
+[submodule "mtrack-project/rapidsms"]
+	path = mtrack-project/rapidsms
 	url = git://github.com/daveycrockett/rapidsms.git
-[submodule "mtrack/rapidsms-ureport"]
-	path = mtrack/rapidsms-ureport
+[submodule "mtrack-project/rapidsms-ureport"]
+	path = mtrack-project/rapidsms-ureport
 	url = git://github.com/daveycrockett/rapidsms-ureport.git
-[submodule "mtrack/rapidsms-script"]
-	path = mtrack/rapidsms-script
+[submodule "mtrack-project/rapidsms-script"]
+	path = mtrack-project/rapidsms-script
 	url = git://github.com/daveycrockett/rapidsms-script.git
-[submodule "mtrack/rapidsms-cvs"]
-	path = mtrack/rapidsms-cvs
+[submodule "mtrack-project/rapidsms-cvs"]
+	path = mtrack-project/rapidsms-cvs
 	url = git://github.com/daveycrockett/rapidsms-cvs.git
-[submodule "mtrack/rapidsms-polls"]
-	path = mtrack/rapidsms-polls
+[submodule "mtrack-project/rapidsms-polls"]
+	path = mtrack-project/rapidsms-polls
 	url = git://github.com/daveycrockett/rapidsms-polls.git
-[submodule "mtrack/django-eav"]
-	path = mtrack/django-eav
+[submodule "mtrack-project/django-eav"]
+	path = mtrack-project/django-eav
 	url = git://github.com/daveycrockett/eav.git
-[submodule "mtrack/rapidsms-auth"]
-	path = mtrack/rapidsms-auth
+[submodule "mtrack-project/rapidsms-auth"]
+	path = mtrack-project/rapidsms-auth
 	url = git://github.com/daveycrockett/auth.git
-[submodule "mtrack/rapidsms-xforms"]
-	path = mtrack/rapidsms-xforms
+[submodule "mtrack-project/rapidsms-xforms"]
+	path = mtrack-project/rapidsms-xforms
 	url = git://github.com/daveycrockett/rapidsms-xforms.git
-[submodule "mtrack/rapidsms-contact"]
-	path = mtrack/rapidsms-contact
+[submodule "mtrack-project/rapidsms-contact"]
+	path = mtrack-project/rapidsms-contact
 	url = git://github.com/mossplix/rapidsms-contact.git
-[submodule "mtrack/healthmodels"]
-	path = mtrack/healthmodels
+[submodule "mtrack-project/healthmodels"]
+	path = mtrack-project/healthmodels
 	url = git://github.com/daveycrockett/healthmodels.git
-[submodule "mtrack/rapidsms-httprouter"]
-	path = mtrack/rapidsms-httprouter
+[submodule "mtrack-project/rapidsms-httprouter"]
+	path = mtrack-project/rapidsms-httprouter
 	url = git://github.com/daveycrockett/rapidsms-httprouter
-[submodule "mtrack/email-reports"]
-	path = mtrack/email-reports
+[submodule "mtrack-project/email-reports"]
+	path = mtrack-project/email-reports
 	url = git://github.com/dimagi/email-reports
-[submodule "mtrack/rapidsms-alerts"]
-	path = mtrack/rapidsms-alerts
+[submodule "mtrack-project/rapidsms-alerts"]
+	path = mtrack-project/rapidsms-alerts
 	url = git://github.com/dimagi/rapidsms-alerts
-[submodule "mtrack/rapidsms-logistics"]
-	path = mtrack/rapidsms-logistics
+[submodule "mtrack-project/rapidsms-logistics"]
+	path = mtrack-project/rapidsms-logistics
 	url = git://github.com/dimagi/rapidsms-logistics
 [submodule "lib/dimagi-utils"]
 	path = lib/dimagi-utils
@@ -52,9 +52,9 @@
 [submodule "lib/auditcare"]
 	path = lib/auditcare
 	url = git://github.com/dimagi/auditcare.git
-[submodule "mtrack/rapidsms-mtrack"]
-	path = mtrack/rapidsms-mtrack
+[submodule "mtrack-project/rapidsms-mtrack"]
+	path = mtrack-project/rapidsms-mtrack
 	url = git://github.com/unicefuganda/rapidsms-mtrack.git
-[submodule "mtrack/uganda_common"]
-	path = mtrack/uganda_common
+[submodule "mtrack-project/uganda_common"]
+	path = mtrack-project/uganda_common
 	url = git://github.com/mossplix/uganda_common

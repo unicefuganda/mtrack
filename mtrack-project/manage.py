@@ -27,6 +27,7 @@ sys.path.append(os.path.join(filedir,'..','lib','dimagi-utils'))
 sys.path.append(os.path.join(filedir,'..','lib','auditcare'))
 sys.path.append(os.path.join(filedir,'uganda_common'))
 sys.path.append(os.path.join(filedir,'rapidsms-unregister'))
+sys.path.append(os.path.join(filedir,'rapidsms-mtrack'))
 
 if __name__ == "__main__":
     execute_manager(settings)

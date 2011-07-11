@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.sessions",
     "django.contrib.contenttypes",
+    "django.contrib.sites",
 
     # the rapidsms contrib apps.
     "rapidsms.contrib.default",
@@ -133,6 +134,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     "django.core.context_processors.request",
+    "logistics.context_processors.base_template",
     "ureport.context_processors.map_params",
 ]
 

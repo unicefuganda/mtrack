@@ -175,6 +175,7 @@ ROOT_URLCONF = "urls"
 
 MAP_KEY="ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
 COUNTRY="uganda"
+MESSAGELOG_APP='rapidsms_httprouter'
 
 import os
 import tempfile

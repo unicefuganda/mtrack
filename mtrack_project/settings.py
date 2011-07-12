@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "rapidsms_xforms",
     "auth",
     "rapidsms_httprouter",
+    "script",
     "poll",
     "ureport",
     "cvs",

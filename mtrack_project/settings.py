@@ -82,6 +82,8 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
+    ("district_dashboard",      "Dashboard"),
+    ("aggregate",                "Stock"),
     ("cvs.views.stats.index",    "Stats"),
     ("cvs.views.map.map_index",  "Map"),
     ("cvs-contact",              "VHTs"),
@@ -159,7 +161,6 @@ TEST_EXCLUDED_APPS = [
     "django.contrib.sessions",
     "django.contrib.contenttypes",
     "django.contrib.auth",
-    "rapidsms",
     "rapidsms.contrib.ajax",
     "rapidsms.contrib.httptester",
 ]

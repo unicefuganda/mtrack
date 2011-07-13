@@ -13,6 +13,26 @@ else:
 # CONSTANTS CONFIG
 ########################
 
+class ProductTypes(object):
+    MALARIA = "m"
+    ALL = {
+        MALARIA: "Malaria",
+    }
+
+class Products(object):
+    YELLOW_ACT = "ye"
+    BLUE_ACT = "bl"
+    BROWN_ACT = "br"
+    GREEN_ACT = "gr"
+    OTHER_ACT = "ot"
+    ALL = {
+        YELLOW_ACT: ("Yellow ACT", ProductTypes.MALARIA, 'box'),
+        BLUE_ACT: ("Blue ACT", ProductTypes.MALARIA, 'box'),
+        BROWN_ACT: ("Brown ACT", ProductTypes.MALARIA, 'box'),
+        GREEN_ACT: ("Green ACT", ProductTypes.MALARIA, 'box'),
+        OTHER_ACT: ("Other ACT", ProductTypes.MALARIA, 'box'),
+    }
+
 class SupplyPointCodes(object):
     """
     These correspond to SupplyPointType.code

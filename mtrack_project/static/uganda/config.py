@@ -17,12 +17,16 @@ class SupplyPointCodes(object):
     """
     These correspond to SupplyPointType.code
     """
-    REGIONAL_MEDICAL_STORE = "RMS"
     REGIONAL_HOSPITAL = "rh"
     HOSPITAL = "hospital"
     HEALTH_CENTER = "hc"
-    CHPS = "chps"
-    CLINIC = "c"
+    CLINIC = "clinic"
+    ALL = {
+        REGIONAL_HOSPITAL: "regional hospital",
+        HOSPITAL: "hospital",
+        HEALTH_CENTER: "health center",
+        CLINIC: "clinic",
+    }
 
 class LocationCodes(object):
     """

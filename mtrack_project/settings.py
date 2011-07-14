@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.sessions",
     "django.contrib.contenttypes",
+    "django.contrib.sites",
 
     # the rapidsms contrib apps.
     "rapidsms.contrib.default",
@@ -60,6 +61,7 @@ INSTALLED_APPS = [
     "rapidsms_xforms",
     "auth",
     "rapidsms_httprouter",
+    "script",
     "poll",
     "ureport",
     "cvs",
@@ -80,6 +82,8 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
+    ("district_dashboard",      "Dashboard"),
+    ("aggregate",                "Stock"),
     ("cvs.views.stats.index",    "Stats"),
     ("cvs.views.map.map_index",  "Map"),
     ("cvs-contact",              "VHTs"),
@@ -133,6 +137,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     "django.core.context_processors.request",
+    "logistics.context_processors.base_template",
     "ureport.context_processors.map_params",
 ]
 
@@ -156,7 +161,6 @@ TEST_EXCLUDED_APPS = [
     "django.contrib.sessions",
     "django.contrib.contenttypes",
     "django.contrib.auth",
-    "rapidsms",
     "rapidsms.contrib.ajax",
     "rapidsms.contrib.httptester",
 ]
@@ -173,6 +177,15 @@ ROOT_URLCONF = "urls"
 
 MAP_KEY="ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
 COUNTRY="uganda"
+MESSAGELOG_APP='rapidsms_httprouter'
+LOGISTICS_CONFIG = 'static.uganda.config'
+LOGISTICS_AGGRESSIVE_SOH_PARSING = False
+
+LOGISTICS_ALERT_GENERATORS = [
+    'logistics.alerts.non_reporting_facilities',
+    'logistics.alerts.facilities_without_reporters',
+    'logistics.alerts.facilities_without_reminders',
+]
 
 import os
 import tempfile

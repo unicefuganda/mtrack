@@ -2,5 +2,5 @@
 .pydevproject
 .settings
 *pyc
-mtrack-project/localsettings.py
+mtrack_project/localsettings.py
 *~

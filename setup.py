@@ -9,26 +9,25 @@ setup(
 
     install_requires = [
         "django",
-        "django-nose",
-        "djtables",
-        "djappsettings"
-        "rapidsms",
         'django-eav',
-        'rapidsms-polls',
-        'rapidsms-httprouter',
-        'rapidsms-unregister',
-        'rapidsms-auth',
-        'rapidsms-script',
         'django-extensions',
+        "django-nose",
+        'django-tablib'
         'django-uni-form',
-        'simple-locations',
-        'rapidsms-unregister',
+        "djappsettings"
+        "djtables",
+        "python-dateutil",
+        "rapidsms",
+        'rapidsms-auth',
         'rapidsms-contact',
         'rapidsms-generic',
+        'rapidsms-httprouter',
+        'rapidsms-polls',
+        'rapidsms-script',
+        'rapidsms-unregister',
+        'tablib',
         'uganda-common',
         'xlrd',
-        'tablib',
-        'django-tablib'
     ],
 
     dependency_links = [

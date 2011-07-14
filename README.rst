@@ -29,8 +29,8 @@ Installation
 * cd mtrack_project
 * cp localsettings.py.example localsettings.py
 * ./manage.py syncdb
+* ./manage.py ghana_init (or ./manage.py ghana_init_demo if you want some dummy data)
 * ./manage.py migrate
-TODO: explain how to load fixtures here
 * update any relevant settings in settings.py or localsettings.py
 * ./manage.py runserver 
 

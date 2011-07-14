@@ -85,6 +85,17 @@ class Roles(object):
         IMCI_COORDINATOR: "imci coordinator"
     }
 
+class Responsibilities(object):
+    """
+    Responsibilities go here
+    """
+    REPORTER = 'reporter',
+    REPORTEE = 'reportee',
+    ALL = {
+        REPORTER: 'report stock on hand',
+        REPORTEE: 'respond to reports of stock on hand'
+    }
+
 class Operations(object):
     FILL_ORDER = "fill"
     MAKE_TRANSFER = "transfer"

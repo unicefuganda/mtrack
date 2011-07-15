@@ -14,7 +14,7 @@ setup(
         "django-nose",
         'django-tablib'
         'django-uni-form',
-        "djappsettings"
+        "djappsettings",
         "djtables",
         "python-dateutil",
         'tablib',

@@ -7,6 +7,10 @@
 # -------------------------------------------------------------------- #
 TIME_ZONE="Africa/Kampala"
 ACTIVATION_CODE = '+START'
+OPT_IN_WORDS=['join']
+OPT_OUT_WORDS=['quit']
+OPT_OUT_MESSAGE='You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
+
 # you should configure your database here before doing any real work.
 # see: http://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
@@ -74,6 +78,7 @@ INSTALLED_APPS = [
 
 SMS_APPS = [
     "cvs",
+    "script",
     "poll",
     "rapidsms_xforms",
 ]

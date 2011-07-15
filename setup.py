@@ -17,7 +17,6 @@ setup(
         "djappsettings"
         "djtables",
         "python-dateutil",
-        "rapidsms",
         'tablib',
         'xlrd',
     ],

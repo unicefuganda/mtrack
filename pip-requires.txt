@@ -16,3 +16,5 @@ south>=0.7.2
 tablib
 virtualenv==1.4.5
 xlrd
+psycopg2
+django-mptt

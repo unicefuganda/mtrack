@@ -12,8 +12,7 @@ TIME_ZONE="Africa/Kampala"
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mtrack'
-,
+        'NAME': 'mtrack',
         'USER': 'www-data',
     }
 }

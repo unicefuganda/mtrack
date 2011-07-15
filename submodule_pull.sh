@@ -1,5 +1,5 @@
 #!/bin/sh
-cd mtrack-project
+cd mtrack_project
 for dir in `find . -maxdepth 1 -type d`
 do
   echo $dir

@@ -12,13 +12,15 @@ setup(
         'django-eav',
         'django-extensions',
         "django-nose",
-        'django-tablib'
+        'django-tablib',
         'django-uni-form',
         "djappsettings",
         "djtables",
         "python-dateutil",
         'tablib',
         'xlrd',
+        'psycopg2',
+        'django-mptt',
     ],
 
     dependency_links = [

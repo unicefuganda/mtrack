@@ -73,7 +73,8 @@ INSTALLED_APPS = [
     "mtrack",
     "logistics",
     "email_reports",
-    "alerts"
+    "alerts",
+    "unregister",
 ]
 
 SMS_APPS = [

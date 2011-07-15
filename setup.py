@@ -24,16 +24,6 @@ setup(
 
     dependency_links = [
         "http://github.com/mvpdev/django-eav/tarball/master#egg=django-eav",
-        "http://github.com/daveycrockett/rapidsms-polls/tarball/master#egg=rapidsms-polls",
-        "http://github.com/daveycrockett/rapidsms-httprouter/tarball/master#egg=rapidsms-httprouter",
-        "http://github.com/daveycrockett/rapidsms-unregister/tarball/master#egg=rapidsms-unregister",
-        "http://github.com/mossplix/simple_locations/tarball/master#egg=simple-locations",
-        "http://github.com/daveycrockett/rapidsms-polls/tarball/master#egg=rapidsms-polls",
-        "http://github.com/mossplix/rapidsms-contact/tarball/master#egg=rapidsms-contact",
-        "http://github.com/daveycrockett/rapidsms-generic/tarball/master#egg=rapidsms-generic",
-        "http://github.com/daveycrockett/rapidsms-script/tarball/master#egg=rapidsms-script",
-        "http://github.com/mossplix/uganda_common/tarball/master#egg=uganda-common",
-        "http://github.com/daveycrockett/auth/tarball/master#egg=rapidsms-auth",
     ],
 
     scripts = [],

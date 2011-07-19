@@ -89,10 +89,10 @@ class Responsibilities(object):
     """
     Responsibilities go here
     """
-    REPORTER = 'reporter',
+    STOCK_ON_HAND_RESPONSIBILITY = 'reporter',
     REPORTEE = 'reportee',
     ALL = {
-        REPORTER: 'report stock on hand',
+        STOCK_ON_HAND_RESPONSIBILITY: 'report stock on hand',
         REPORTEE: 'respond to reports of stock on hand'
     }
 

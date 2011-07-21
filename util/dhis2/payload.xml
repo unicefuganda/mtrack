@@ -1,0 +1,8 @@
+<dataValueSet xmlns="http://dhis2.org/schema/dxf/2.0-SNAPSHOT"
+    dataSet="6812E377-E9A7-4274-84A2-06413098AE5B" 
+    period="201101"
+    orgUnit="AD6F8590-1E5F-4F8B-A326-C91DF0A98531">
+  <dataValue dataElement="69C488FD-1D1C-4B01-9ECC-92ECC2AEAF2D" categoryOptionCombo="57A02141-B2A2-42C8-A89B-24B7A8A93872" storedBy="rowena" value="3"/>
+  <dataValue dataElement="69C488FD-1D1C-4B01-9ECC-92ECC2AEAF2D" categoryOptionCombo="CAD27332-69DC-47B8-ABF7-6CBD7C70E182" storedBy="rowena" value="8"/>
+</dataValueSet>
+

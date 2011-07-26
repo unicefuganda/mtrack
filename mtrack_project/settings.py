@@ -11,6 +11,14 @@ OPT_IN_WORDS=['join']
 OPT_OUT_WORDS=['quit']
 OPT_OUT_MESSAGE='You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
 
+# map bounding box
+MIN_LON = '29.55322265625'
+MAX_LON = '33.92578125'
+MIN_LAT = '-1.0326589311777759'
+MAX_LAT = '4.280680030820496'
+# map categorized color pallete
+CATEGORY_COLORS = ['#AA4643', '#4572A7', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92']
+
 # you should configure your database here before doing any real work.
 # see: http://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
@@ -144,7 +152,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.media",
     "django.core.context_processors.request",
     "logistics.context_processors.base_template",
-    "ureport.context_processors.map_params",
+    "generic.context_processors.map_params",
 ]
 
 MIDDLEWARE_CLASSES = (

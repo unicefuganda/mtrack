@@ -96,12 +96,12 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-    ("district_dashboard",      "Dashboard"),
-    ("aggregate",                "Stock"),
-    ("cvs.views.stats.index",    "Stats"),
-    ("cvs.views.map.map_index",  "Map"),
-    ("cvs-contact",              "VHTs"),
-    ("cvs-messagelog",           "Message Log"),
+    ("district_dashboard", "Dashboard"),
+    ("aggregate", "Stock"),
+    ("cvs.views.stats.index", "Stats"),
+    ("cvs-map", "Map"),
+    ("cvs-contact", "VHTs"),
+    ("cvs-messagelog", "Message Log"),
 ]
 
 # -------------------------------------------------------------------- #
@@ -190,7 +190,7 @@ TEMPLATE_LOADERS = (
 ROOT_URLCONF = "urls"
 
 MAP_KEY="ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
-COUNTRY="uganda"
+COUNTRY="UG"
 MESSAGELOG_APP='rapidsms_httprouter'
 LOGISTICS_CONFIG = 'static.uganda.config'
 LOGISTICS_AGGRESSIVE_SOH_PARSING = False

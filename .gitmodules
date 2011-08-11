@@ -55,3 +55,6 @@
 [submodule "mtrack_project/rapidsms_xforms_src"]
 	path = mtrack_project/rapidsms_xforms_src
 	url = git://github.com/daveycrockett/rapidsms-xforms.git
+[submodule "lib/dimagi-utils"]
+	path = lib/dimagi-utils
+	url = git://github.com/dimagi/dimagi-utils.git

@@ -1,18 +1,18 @@
 [submodule "mtrack_project/rapidsms"]
 	path = mtrack_project/rapidsms
-	url = git://github.com/daveycrockett/rapidsms.git
+	url = git://github.com/unicefuganda/rapidsms.git
 [submodule "mtrack_project/healthmodels"]
 	path = mtrack_project/healthmodels
-	url = git://github.com/daveycrockett/healthmodels.git
+	url = git://github.com/unicefuganda/rapidsms-healthmodels.git
 [submodule "lib/auditcare"]
 	path = lib/auditcare
 	url = git://github.com/dimagi/auditcare.git
 [submodule "mtrack_project/uganda_common"]
 	path = mtrack_project/uganda_common
-	url = git://github.com/mossplix/uganda_common
+	url = git://github.com/unicefuganda/rapidsms-uganda-common
 [submodule "mtrack_project/django_eav"]
 	path = mtrack_project/django_eav
-	url = git://github.com/daveycrockett/eav.git
+	url = git://github.com/unicefuganda/django-eav.git
 [submodule "mtrack_project/email_reports_src"]
 	path = mtrack_project/email_reports_src
 	url = git://github.com/dimagi/email-reports.git
@@ -21,19 +21,19 @@
 	url = git://github.com/dimagi/rapidsms-alerts.git
 [submodule "mtrack_project/rapidsms_auth"]
 	path = mtrack_project/rapidsms_auth
-	url = git://github.com/daveycrockett/auth.git
+	url = git://github.com/unicefuganda/rapidsms-auth.git
 [submodule "mtrack_project/rapidsms_contact"]
 	path = mtrack_project/rapidsms_contact
-	url = git://github.com/mossplix/rapidsms-contact.git
+	url = git://github.com/unicefuganda/rapidsms-contact.git
 [submodule "mtrack_project/rapidsms_cvs"]
 	path = mtrack_project/rapidsms_cvs
-	url = git://github.com/daveycrockett/rapidsms-cvs.git
+	url = git://github.com/unicefuganda/rapidsms-cvs.git
 [submodule "mtrack_project/rapidsms_generic"]
 	path = mtrack_project/rapidsms_generic
-	url = git://github.com/daveycrockett/rapidsms-generic.git
+	url = git://github.com/unicefuganda/rapidsms-generic.git
 [submodule "mtrack_project/rapidsms_httprouter_src"]
 	path = mtrack_project/rapidsms_httprouter_src
-	url = git://github.com/daveycrockett/rapidsms-httprouter.git
+	url = git://github.com/unicefuganda/rapidsms-httprouter.git
 [submodule "mtrack_project/rapidsms_logistics"]
 	path = mtrack_project/rapidsms_logistics
 	url = git://github.com/dimagi/rapidsms-logistics.git
@@ -42,19 +42,19 @@
 	url = git://github.com/unicefuganda/rapidsms-mtrack.git
 [submodule "mtrack_project/rapidsms_polls"]
 	path = mtrack_project/rapidsms_polls
-	url = git://github.com/daveycrockett/rapidsms-polls.git
+	url = git://github.com/unicefuganda/rapidsms-polls.git
 [submodule "mtrack_project/rapidsms_script"]
 	path = mtrack_project/rapidsms_script
-	url = git://github.com/daveycrockett/rapidsms-script.git
+	url = git://github.com/unicefuganda/rapidsms-script.git
 [submodule "mtrack_project/rapidsms_unregister"]
 	path = mtrack_project/rapidsms_unregister
-	url = git://github.com/daveycrockett/rapidsms-unregister
+	url = git://github.com/unicefuganda/rapidsms-unregister
 [submodule "mtrack_project/rapidsms_ureport"]
 	path = mtrack_project/rapidsms_ureport
-	url = git://github.com/daveycrockett/rapidsms-ureport
+	url = git://github.com/unicefuganda/rapidsms-ureport
 [submodule "mtrack_project/rapidsms_xforms_src"]
 	path = mtrack_project/rapidsms_xforms_src
-	url = git://github.com/daveycrockett/rapidsms-xforms.git
+	url = git://github.com/unicefuganda/rapidsms-xforms.git
 [submodule "lib/dimagi-utils"]
 	path = lib/dimagi-utils
 	url = git://github.com/dimagi/dimagi-utils.git

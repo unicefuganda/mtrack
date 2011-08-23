@@ -58,3 +58,6 @@
 [submodule "lib/dimagi-utils"]
 	path = lib/dimagi-utils
 	url = git://github.com/dimagi/dimagi-utils.git
+[submodule "mtrack_project/rapidsms_tracking"]
+	path = mtrack_project/rapidsms_tracking
+	url = git://github.com/unicefuganda/rapidsms-tracking

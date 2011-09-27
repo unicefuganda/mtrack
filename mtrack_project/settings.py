@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "mptt",
     "uni_form",
     "django_extensions",
+    "django_digest",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",

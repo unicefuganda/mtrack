@@ -1,4 +1,4 @@
-#from setuptools import setup, find_packages
+from setuptools import setup, find_packages
 from setuptools import find_packages
 from distutils.core import setup
 
@@ -21,6 +21,8 @@ setup(
         'xlrd',
         'psycopg2',
         'django-mptt',
+        'python-digest==1.7',
+        'django-digest==1.13',
     ],
 
     dependency_links = [

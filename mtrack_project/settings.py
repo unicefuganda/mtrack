@@ -6,38 +6,37 @@ import sys, os
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
-sys.path.append(os.path.join(filedir,'rapidsms','lib'))
-sys.path.append(os.path.join(filedir,'rapidsms_auth'))
-sys.path.append(os.path.join(filedir,'rapidsms_contact'))
-sys.path.append(os.path.join(filedir,'rapidsms_cvs'))
-sys.path.append(os.path.join(filedir,'rapidsms_generic'))
-sys.path.append(os.path.join(filedir,'rapidsms_httprouter_src'))
-sys.path.append(os.path.join(filedir,'rapidsms_polls'))
-sys.path.append(os.path.join(filedir,'rapidsms_script'))
-sys.path.append(os.path.join(filedir,'rapidsms_uregister'))
-sys.path.append(os.path.join(filedir,'rapidsms_ureport'))
-sys.path.append(os.path.join(filedir,'rapidsms_xforms_src'))
-sys.path.append(os.path.join(filedir,'healthmodels'))
-sys.path.append(os.path.join(filedir,'django_eav'))
-sys.path.append(os.path.join(filedir,'rapidsms_logistics'))
-sys.path.append(os.path.join(filedir,'rapidsms_alerts'))
-sys.path.append(os.path.join(filedir,'email_reports_src'))
-sys.path.append(os.path.join(filedir,'..','lib','dimagi-utils'))
-sys.path.append(os.path.join(filedir,'rapidsms_uganda_common'))
-sys.path.append(os.path.join(filedir,'rapidsms_uganda_ussd'))
-sys.path.append(os.path.join(filedir,'rapidsms_unregister'))
-sys.path.append(os.path.join(filedir,'rapidsms_mtrack'))
+sys.path.append(os.path.join(filedir, 'rapidsms', 'lib'))
+sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
+sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
+sys.path.append(os.path.join(filedir, 'rapidsms_cvs'))
+sys.path.append(os.path.join(filedir, 'rapidsms_generic'))
+sys.path.append(os.path.join(filedir, 'rapidsms_httprouter_src'))
+sys.path.append(os.path.join(filedir, 'rapidsms_polls'))
+sys.path.append(os.path.join(filedir, 'rapidsms_script'))
+sys.path.append(os.path.join(filedir, 'rapidsms_uregister'))
+sys.path.append(os.path.join(filedir, 'rapidsms_ureport'))
+sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
+sys.path.append(os.path.join(filedir, 'healthmodels'))
+sys.path.append(os.path.join(filedir, 'django_eav'))
+sys.path.append(os.path.join(filedir, 'rapidsms_logistics'))
+sys.path.append(os.path.join(filedir, 'rapidsms_alerts'))
+sys.path.append(os.path.join(filedir, 'email_reports_src'))
+sys.path.append(os.path.join(filedir, '..', 'lib', 'dimagi-utils'))
+sys.path.append(os.path.join(filedir, 'rapidsms_uganda_common'))
+sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
+sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
+sys.path.append(os.path.join(filedir, 'rapidsms_mtrack'))
 
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
 # -------------------------------------------------------------------- #
-TIME_ZONE="Africa/Kampala"
-ACTIVATION_CODE = '+START'
-OPT_IN_WORDS=['join']
-OPT_OUT_WORDS=['quit']
-OPT_OUT_MESSAGE='You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
-
+TIME_ZONE = "Africa/Kampala"
+ACTIVATION_CODE = 'start'
+OPT_IN_WORDS = ['join']
+OPT_OUT_WORDS = ['quit']
+OPT_OUT_CONFIRMATION = 'You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
 # map bounding box
 MIN_LON = '29.55322265625'
 MAX_LON = '33.92578125'
@@ -68,7 +67,7 @@ DATABASES = {
 INSTALLED_BACKENDS = {
     "message_tester": {
         "ENGINE": "rapidsms.backends.bucket",
-    },  
+    },
 }
 
 
@@ -76,11 +75,13 @@ INSTALLED_BACKENDS = {
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
     "djtables",
+    "uganda_common",
     "rapidsms",
     "mptt",
     "uni_form",
     "django_extensions",
     "django_digest",
+    "django_nose",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",
@@ -125,13 +126,26 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-    ("district_dashboard", "Dashboard"),
-    ("aggregate", "Stock"),
     ("cvs.views.stats.index", "Stats"),
     ("cvs-map", "Map"),
     ("cvs-contact", "VHTs"),
     ("cvs-messagelog", "Message Log"),
+    ("cvs-training-contact", "Trainees"),
+    ("cvs-training-messagelog", "Training Messages"),
 ]
+
+AUTHENTICATED_TABS = [
+    ("polls", "Polls")
+]
+#
+#RAPIDSMS_TABS = [
+#    ("district_dashboard", "Dashboard"),
+#    ("aggregate", "Stock"),
+#    ("cvs.views.stats.index", "Stats"),
+#    ("cvs-map", "Map"),
+#    ("cvs-contact", "VHTs"),
+#    ("cvs-messagelog", "Message Log"),
+#]
 
 # -------------------------------------------------------------------- #
 #                         BORING CONFIGURATION                         #
@@ -141,7 +155,7 @@ RAPIDSMS_TABS = [
 # debug mode is turned on as default, since rapidsms is under heavy
 # development at the moment, and full stack traces are very useful
 # when reporting bugs. don't forget to turn this off in production.
-DEBUG = TEMPLATE_DEBUG = True 
+DEBUG = TEMPLATE_DEBUG = True
 
 
 # after login (which is handled by django.contrib.auth), redirect to the
@@ -158,11 +172,11 @@ TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
 # for some reason this setting is blank in django's global_settings.py,
 # but it is needed for static assets to be linkable.
 MEDIA_URL = "/static/"
-ADMIN_MEDIA_PREFIX="/static/media/"
+ADMIN_MEDIA_PREFIX = "/static/media/"
 # this is required for the django.contrib.sites tests to run, but also
 # not included in global_settings.py, and is almost always ``1``.
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
-SITE_ID = 1 
+SITE_ID = 1
 
 # the default log settings are very noisy.
 LOG_LEVEL = "DEBUG"
@@ -182,6 +196,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.request",
     "logistics.context_processors.base_template",
     "generic.context_processors.map_params",
+    "uganda_common.context_processors.authtabs",
 ]
 
 MIDDLEWARE_CLASSES = (
@@ -218,9 +233,9 @@ TEMPLATE_LOADERS = (
 # the project-level url patterns
 ROOT_URLCONF = "urls"
 
-MAP_KEY="ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
-COUNTRY="UG"
-MESSAGELOG_APP='rapidsms_httprouter'
+MAP_KEY = "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
+COUNTRY = "UG"
+MESSAGELOG_APP = 'rapidsms_httprouter'
 LOGISTICS_CONFIG = 'static.uganda.config'
 LOGISTICS_AGGRESSIVE_SOH_PARSING = False
 
@@ -240,7 +255,7 @@ try:
         # the LOCAL_SETTINGS environment variable is used by the build server
         sys.path.insert(0, os.path.dirname(os.environ['LOCAL_SETTINGS']))
         from settings_test import *
-    else: 
+    else:
         from localsettings import *
 except ImportError:
     pass

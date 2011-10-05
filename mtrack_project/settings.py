@@ -23,7 +23,8 @@ sys.path.append(os.path.join(filedir,'rapidsms_logistics'))
 sys.path.append(os.path.join(filedir,'rapidsms_alerts'))
 sys.path.append(os.path.join(filedir,'email_reports_src'))
 sys.path.append(os.path.join(filedir,'..','lib','dimagi-utils'))
-sys.path.append(os.path.join(filedir,'uganda_common'))
+sys.path.append(os.path.join(filedir,'rapidsms_uganda_common'))
+sys.path.append(os.path.join(filedir,'rapidsms_uganda_ussd'))
 sys.path.append(os.path.join(filedir,'rapidsms_unregister'))
 sys.path.append(os.path.join(filedir,'rapidsms_mtrack'))
 
@@ -110,6 +111,7 @@ INSTALLED_APPS = [
     "email_reports",
     "alerts",
     "unregister",
+    "ussd",
 ]
 
 SMS_APPS = [

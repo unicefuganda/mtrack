@@ -75,6 +75,7 @@ INSTALLED_BACKENDS = {
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
     "djtables",
+    "mtrack",
     "uganda_common",
     "rapidsms",
     "mptt",
@@ -107,7 +108,6 @@ INSTALLED_APPS = [
     "cvs",
     "generic",
     "contact",
-    "mtrack",
     "logistics",
     "email_reports",
     "alerts",

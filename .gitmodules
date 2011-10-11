@@ -7,9 +7,6 @@
 [submodule "lib/auditcare"]
 	path = lib/auditcare
 	url = git://github.com/dimagi/auditcare.git
-[submodule "mtrack_project/uganda_common"]
-	path = mtrack_project/uganda_common
-	url = git://github.com/unicefuganda/rapidsms-uganda-common
 [submodule "mtrack_project/django_eav"]
 	path = mtrack_project/django_eav
 	url = git://github.com/unicefuganda/django-eav.git
@@ -61,3 +58,9 @@
 [submodule "mtrack_project/rapidsms_tracking"]
 	path = mtrack_project/rapidsms_tracking
 	url = git://github.com/unicefuganda/rapidsms-tracking
+[submodule "mtrack_project/rapidsms_uganda_common"]
+	path = mtrack_project/rapidsms_uganda_common
+	url = git://github.com/unicefuganda/rapidsms-uganda-common
+[submodule "mtrack_project/rapidsms_uganda_ussd"]
+	path = mtrack_project/rapidsms_uganda_ussd
+	url = git://github.com/unicefuganda/rapidsms-uganda-ussd

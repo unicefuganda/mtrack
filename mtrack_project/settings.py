@@ -38,10 +38,10 @@ OPT_IN_WORDS = ['join']
 OPT_OUT_WORDS = ['quit']
 OPT_OUT_CONFIRMATION = 'You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
 # map bounding box
-MIN_LON = '29.55322265625'
-MAX_LON = '33.92578125'
-MIN_LAT = '-1.0326589311777759'
-MAX_LAT = '4.280680030820496'
+MIN_LON = '29.5532'
+MAX_LON = '33.9258'
+MIN_LAT = '-1.0327'
+MAX_LAT = '4.2807'
 # map categorized color pallete
 CATEGORY_COLORS = ['#AA4643', '#4572A7', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92']
 
@@ -244,6 +244,9 @@ LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.facilities_without_reporters',
     'logistics.alerts.facilities_without_reminders',
 ]
+LOGISTICS_NOTIF_GENERATORS = [
+]
+SYSTEM_USERNAME = '-mtrack-'
 
 import os
 import tempfile

@@ -1,6 +1,5 @@
 Django>=1.2.1
 django-celery
-django-eav
 django-extensions
 django-nose>=0.1
 django-tablib

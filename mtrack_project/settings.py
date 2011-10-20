@@ -113,6 +113,11 @@ INSTALLED_APPS = [
     "alerts",
     "unregister",
     "ussd",
+
+
+    #Uncomment south in order to use South; also, for any apps
+    # that you add to this list, all must be placed above "south"
+    #"south",
 ]
 
 SMS_APPS = [

@@ -51,6 +51,7 @@ GOTCHAS: If a relation already exists you'll get exception errors informing you 
    `./manage.py schemamigration <app_name> --auto`
  
 Available options you have when running migrations on models are
+
 * --initial
 * --auto
 * --empty

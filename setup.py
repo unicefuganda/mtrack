@@ -7,7 +7,7 @@ setup(
     version='0.1',
     license="BSD",
 
-    install_requires = [
+    install_requires=[
         "django",
         'django-eav',
         'django-extensions',
@@ -25,11 +25,11 @@ setup(
         'django-digest==1.13',
     ],
 
-    dependency_links = [
+    dependency_links=[
         "http://github.com/mvpdev/django-eav/tarball/master#egg=django-eav",
     ],
 
-    scripts = [],
+    scripts=[],
 
     description='The mTrack ACT tracking system deployed in Uganda.',
     long_description=open('README.rst').read(),
@@ -42,7 +42,6 @@ setup(
     include_package_data=True,
 
     packages=find_packages(),
-    package_data={'ureport':['templates/*/*.html','templates/*/*/*.html','static/*/*']},
     zip_safe=False,
     classifiers=[
         'Development Status :: 4 - Beta',

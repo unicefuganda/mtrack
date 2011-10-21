@@ -2,7 +2,6 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
 from rapidsms_httprouter.urls import urlpatterns as router_urls
-from ureport.urls import urlpatterns as ureport_urls
 from rapidsms_xforms.urls import urlpatterns as xform_urls
 from cvs.urls import urlpatterns as cvs_urls
 from healthmodels.urls import urlpatterns as healthmodels_urls
@@ -37,7 +36,7 @@ urlpatterns = patterns('',
     (r'^polls/', include('poll.urls')),
     (r'^logistics/', include('logistics.urls')),
     (r'^reports/', include('email_reports.urls')),
-) + router_urls + ureport_urls + xform_urls + cvs_urls + healthmodels_urls + contact_urls + mtrack_urls + ussd_urls
+) + router_urls + xform_urls + cvs_urls + healthmodels_urls + contact_urls + mtrack_urls + ussd_urls
 
 if settings.DEBUG:
     urlpatterns += patterns('',

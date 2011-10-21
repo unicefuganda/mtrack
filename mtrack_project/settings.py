@@ -15,7 +15,6 @@ sys.path.append(os.path.join(filedir, 'rapidsms_httprouter_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_polls'))
 sys.path.append(os.path.join(filedir, 'rapidsms_script'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uregister'))
-sys.path.append(os.path.join(filedir, 'rapidsms_ureport'))
 sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
 sys.path.append(os.path.join(filedir, 'healthmodels'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
@@ -104,7 +103,6 @@ INSTALLED_APPS = [
     "rapidsms_httprouter",
     "script",
     "poll",
-    "ureport",
     "cvs",
     "generic",
     "contact",

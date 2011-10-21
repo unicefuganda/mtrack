@@ -1,3 +1,3 @@
-* * * * * /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py check_script_progress -e 7 -l 20
-0 12 1 * * /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py send_monthly_reports
+* * * * * www   /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py check_script_progress -e 7 -l 20
+0 12 1 * * www    /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py send_monthly_reports
 

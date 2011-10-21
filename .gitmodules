@@ -46,9 +46,6 @@
 [submodule "mtrack_project/rapidsms_unregister"]
 	path = mtrack_project/rapidsms_unregister
 	url = git://github.com/unicefuganda/rapidsms-unregister
-[submodule "mtrack_project/rapidsms_ureport"]
-	path = mtrack_project/rapidsms_ureport
-	url = git://github.com/unicefuganda/rapidsms-ureport
 [submodule "mtrack_project/rapidsms_xforms_src"]
 	path = mtrack_project/rapidsms_xforms_src
 	url = git://github.com/unicefuganda/rapidsms-xforms.git

@@ -30,7 +30,33 @@ Installation
 * cp localsettings.py.example localsettings.py
 * ./manage.py syncdb
 * ./manage.py mtrack_init (or ./manage.py mtrack_init_demo if you want some dummy data)
-* ./manage.py migrate
+* ./manage.py migrate (see section just below on how to use south)
 * update any relevant settings in settings.py or localsettings.py
 * ./manage.py runserver 
 
+South Specific
+==============
+Please uncomment the `south` in the `INSTALLED_APPS` list.
+
+* run syncdb
+* for first time usage, create a migration
+  `./manage.py schemamigration <app_name> --initial`
+
+Next step, is to apply the migration
+  `./manage.py migrate <app_name>`
+
+GOTCHAS: If a relation already exists you'll get exception errors informing you about this, so don't worry. Just establish a good team workflow when developing using South.
+
+* for any new changes made to you models (relations) at a "column" and "row" level, you can be a little picky
+   `./manage.py schemamigration <app_name> --auto`
+ 
+Available options you have when running migrations on models are
+
+* --initial
+* --auto
+* --empty
+* --add-model
+* --add-field
+* --add-index
+
+TIP: If you doing this by hand for `n` number of applications is hard, you can always write a script on top of you South to iterative comb through your project directory to do this for you.

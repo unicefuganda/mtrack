@@ -112,14 +112,9 @@ INSTALLED_APPS = [
     "unregister",
     "ussd",
 
-
     #Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"
     "south",
-]
-
-SOUTH_ENABLED_APPS = [
-	
 ]
 
 

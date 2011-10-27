@@ -74,17 +74,20 @@ INSTALLED_BACKENDS = {
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
     "djtables",
-    "mtrack",
-    "uganda_common",
-    "rapidsms",
     "mptt",
     "uni_form",
+
     "django_extensions",
     "django_digest",
     "django_nose",
+
+    "mtrack",
+
+    "rapidsms",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",
+    "rapidsms.contrib.default",
 
     "django.contrib.auth",
     "django.contrib.admin",
@@ -92,10 +95,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sites",
 
-    # the rapidsms contrib apps.
-    "rapidsms.contrib.default",
-#    "rapidsms.contrib.messaging",
-#    "rapidsms.contrib.registration",
+    "uganda_common",
     "eav",
     "healthmodels",
     "rapidsms_xforms",
@@ -131,24 +131,13 @@ SMS_APPS = [
 RAPIDSMS_TABS = [
     ("cvs.views.stats.index", "Stats"),
     ("cvs-map", "Map"),
-    ("cvs-contact", "VHTs"),
-    ("cvs-messagelog", "Message Log"),
-    ("cvs-training-contact", "Trainees"),
-    ("cvs-training-messagelog", "Training Messages"),
+    ("cvs-contact", "Users"),
+    ("cvs-messagelog", "Messages"),
 ]
 
 AUTHENTICATED_TABS = [
     ("polls", "Polls")
 ]
-#
-#RAPIDSMS_TABS = [
-#    ("district_dashboard", "Dashboard"),
-#    ("aggregate", "Stock"),
-#    ("cvs.views.stats.index", "Stats"),
-#    ("cvs-map", "Map"),
-#    ("cvs-contact", "VHTs"),
-#    ("cvs-messagelog", "Message Log"),
-#]
 
 # -------------------------------------------------------------------- #
 #                         BORING CONFIGURATION                         #
@@ -181,14 +170,6 @@ ADMIN_MEDIA_PREFIX = "/static/media/"
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
 SITE_ID = 1
 
-# the default log settings are very noisy.
-LOG_LEVEL = "DEBUG"
-LOG_FILE = "rapidsms.log"
-LOG_FORMAT = "[%(name)s]: %(message)s"
-LOG_SIZE = 8192  # 8192 bits = 8 kb
-LOG_BACKUPS = 256  # number of logs to keep
-
-
 # these weird dependencies should be handled by their respective apps,
 # but they're not, so here they are. most of them are for django admin.
 TEMPLATE_CONTEXT_PROCESSORS = [
@@ -206,7 +187,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    #'django.middleware.cache.CacheMiddleware',
     'django.middleware.common.CommonMiddleware',
 )
 

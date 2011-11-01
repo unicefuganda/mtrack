@@ -2,6 +2,29 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+# SMARTMIN CONFIG
+# create the smartmin CRUDL permissions on all objects
+#PERMISSIONS = {
+#  '*': ('create', # can create an object
+#        'read', # can read an object, viewing it's details
+#        'update', # can update an object
+#        'delete', # can delete an object,
+#        'list'), # can view a list of the objects
+#}
+
+# assigns the permissions that each group should have, here creating an Administrator group with
+# authority to create and change users
+#GROUP_PERMISSIONS = {
+#    "Administrator": ('auth.user.*',)
+#}
+
+# this is required by guardian
+ANONYMOUS_USER_ID = -1
+
+# set this if you want to use smartmin's user login
+#LOGIN_URL = '/users/login'
+
+
 import sys, os
 
 filedir = os.path.dirname(__file__)
@@ -20,6 +43,7 @@ sys.path.append(os.path.join(filedir, 'healthmodels'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
 sys.path.append(os.path.join(filedir, 'rapidsms_logistics'))
 sys.path.append(os.path.join(filedir, 'rapidsms_alerts'))
+#sys.path.append(os.path.join(filedir, 'smartmin_src'))
 sys.path.append(os.path.join(filedir, 'email_reports_src'))
 sys.path.append(os.path.join(filedir, '..', 'lib', 'dimagi-utils'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_common'))
@@ -73,6 +97,8 @@ INSTALLED_BACKENDS = {
 # to help you get started quickly, many django/rapidsms apps are enabled
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
+    "guardian",
+#    "smartmin",
     "djtables",
     "mptt",
     "uni_form",
@@ -95,7 +121,6 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sites",
 
-    "uganda_common",
     "eav",
     "healthmodels",
     "rapidsms_xforms",
@@ -105,6 +130,8 @@ INSTALLED_APPS = [
     "poll",
     "cvs",
     "generic",
+    "generic.reporting",
+    "uganda_common",
     "contact",
     "logistics",
     "email_reports",
@@ -129,7 +156,7 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-    ("cvs.views.stats.index", "Stats"),
+    ("stats", "Stats"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
@@ -228,6 +255,8 @@ LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.facilities_without_reminders',
 ]
 LOGISTICS_NOTIF_GENERATORS = [
+    'alerts._prototyping.notifiable_disease_test',
+    'alerts._prototyping.notiftest2',
 ]
 SYSTEM_USERNAME = '-mtrack-'
 

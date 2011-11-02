@@ -3,9 +3,9 @@
 ########################
 from rapidsms.conf import settings
 # annoyingly, settings.x throws a valueerror when x is not set
-if hasattr(settings,'MESSAGELOG_APP'):
+if hasattr(settings, 'MESSAGELOG_APP'):
     # rl: not sure why i have to specifically list submodules...
-    messagelog = __import__(settings.MESSAGELOG_APP, fromlist = ['models'])
+    messagelog = __import__(settings.MESSAGELOG_APP, fromlist=['models'])
 else:
     import rapidsms.contrib.messagelog as messagelog
 
@@ -20,17 +20,22 @@ class ProductTypes(object):
     }
 
 class Products(object):
-    YELLOW_ACT = "ye"
-    BLUE_ACT = "bl"
-    BROWN_ACT = "br"
-    GREEN_ACT = "gr"
-    OTHER_ACT = "ot"
+    RAPID_DIAGNOSTIC_TEST = "rdt"
+    SIX_PACK = "sp"
+    TWELVE_PACK = "tp"
+    EIGHTEEN_PACK = "ep"
+    TWENTY_FOUR_PACK = "fp"
+    OTHER_ACT_STOCK = "oa"
+    QUININE = "qu"
+
     ALL = {
-        YELLOW_ACT: ("Yellow ACT", ProductTypes.MALARIA, 'box'),
-        BLUE_ACT: ("Blue ACT", ProductTypes.MALARIA, 'box'),
-        BROWN_ACT: ("Brown ACT", ProductTypes.MALARIA, 'box'),
-        GREEN_ACT: ("Green ACT", ProductTypes.MALARIA, 'box'),
-        OTHER_ACT: ("Other ACT", ProductTypes.MALARIA, 'box'),
+        RAPID_DIAGNOSTIC_TEST: ("Rapid Diagnostic Test(RDT)", ProductTypes.MALARIA, 'box'),
+        SIX_PACK: ("6 Tablet Pack", ProductTypes.MALARIA, 'box'),
+        TWELVE_PACK: ("12 Tablet Pack", ProductTypes.MALARIA, 'box'),
+        EIGHTEEN_PACK: ("18 Tablet Pack", ProductTypes.MALARIA, 'box'),
+        TWENTY_FOUR_PACK: ("24 Tablet Pack", ProductTypes.MALARIA, 'box'),
+        OTHER_ACT_STOCK: ("Other ACT", ProductTypes.MALARIA, 'box'),
+        QUININE: ("Quinine", ProductTypes.MALARIA, 'box'),
     }
 
 class SupplyPointCodes(object):
@@ -148,7 +153,7 @@ class Groups(object):
 
 class Messages(object):
     # some semblance of an attempt to start being consistent about this.
-    
+
     # "register" keyword (hsa registration)
     HSA_HELP = "Sorry, I didn't understand. To register, send register [first name] [last name] [id] [facility]. Example: 'register john smith 1 1001'"
     # "manage" keyword (manger registration)
@@ -159,7 +164,7 @@ class Messages(object):
     # "soh" keyword (report stock on hand)
     SOH_HELP_MESSAGE = "To report stock on hand, send SOH [space] [product code] [space] [amount]"
     SUPERVISOR_SOH_NOTIFICATION = "%(hsa)s needs the following products: %(products)s. Respond 'ready %(hsa_id)s' when products are ready for pick up."
-    SOH_ORDER_CONFIRM = "Thank you, you reported stock for %(products)s. The health center has been notified and you will get a message when products are ready." 
+    SOH_ORDER_CONFIRM = "Thank you, you reported stock for %(products)s. The health center has been notified and you will get a message when products are ready."
     # "rec" keyword (receipts)
     RECEIPT_CONFIRM = 'Thank you, you reported receipts for %(products)s.'
     RECEIPT_FROM_CONFIRM = 'Thank you, you reported receipts for %(products)s from %(supplier)s.'
@@ -222,7 +227,7 @@ class Messages(object):
     GET_HELP_MESSAGE = "Please contact your %(supervisor)s for assistance." % {'supervisor' : SUPERVISOR_TITLE}
     NO_CODE_ERROR = "Stock report should contain at least one product code. " + \
                                 "Please contact your %(supervisor)s for assistance." % {'supervisor' : SUPERVISOR_TITLE}
-    NO_QUANTITY_ERROR ="Stock report should contain quantity of stock on hand. " + \
+    NO_QUANTITY_ERROR = "Stock report should contain quantity of stock on hand. " + \
                                  "Please contact your %(supervisor)s for assistance." % {'supervisor': SUPERVISOR_TITLE}
     NO_SUPPLY_POINT_MESSAGE = "You are not associated with a facility. Please contact your district IMCI Focal Person for assistance."
     REGISTER_MESSAGE = "You must be registered on this system " + \

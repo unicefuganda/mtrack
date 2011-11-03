@@ -15,7 +15,7 @@
 	url = git://github.com/dimagi/email-reports.git
 [submodule "mtrack_project/rapidsms_alerts"]
 	path = mtrack_project/rapidsms_alerts
-	url = git://github.com/dimagi/rapidsms-alerts.git
+	url = git://github.com/unicefuganda/rapidsms-alerts.git
 [submodule "mtrack_project/rapidsms_auth"]
 	path = mtrack_project/rapidsms_auth
 	url = git://github.com/unicefuganda/rapidsms-auth.git

@@ -24,7 +24,6 @@ ANONYMOUS_USER_ID = -1
 # set this if you want to use smartmin's user login
 #LOGIN_URL = '/users/login'
 
-
 import sys, os
 
 filedir = os.path.dirname(__file__)
@@ -59,6 +58,7 @@ TIME_ZONE = "Africa/Kampala"
 ACTIVATION_CODE = 'start'
 OPT_IN_WORDS = ['join']
 OPT_OUT_WORDS = ['quit']
+INITIAL_USSD_SCREEN = 'ussd_root'
 OPT_OUT_CONFIRMATION = 'You have just quit.If you want to re-register,or register to a new location,please send the word JOIN to 6767.'
 # map bounding box
 MIN_LON = '29.5532'

@@ -74,7 +74,8 @@ DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mtrack',
-        'USER': 'www-data',
+        'USER': 'postgres',
+        'HOST': 'dbserver',
     }
 }
 # the rapidsms backend configuration is designed to resemble django's

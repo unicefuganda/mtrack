@@ -157,8 +157,8 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-    ('mtrack-mgt-stats', 'Mgt Stats'),
-    ("mtrack-stats", "Stats"),
+    ('mtrack-mgt-stats', 'Mgt Data'),
+    ("mtrack-stats", "Health Data"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),

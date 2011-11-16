@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *.pyc
 =======
 .project
@@ -8,5 +7,4 @@
 mtrack_project/localsettings.py
 *~
 *.sqlite
-
->>>>>>> 2557787d6e66fe3c7fc15d9c293660ac2d2236c1
+.idea/

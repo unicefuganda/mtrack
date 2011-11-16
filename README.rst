@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 RapidSMS Uganda Common
 ======================
 This module contains some common utilities used across RapidSMS (applications).
@@ -41,3 +42,67 @@ python objects (such as model instances), they include:
     * previous calendar month
     * and a number of others (please use the help() function to learn more about the modules, some inline documentation has
 been added)
+=======
+Mtrack
+======
+Mtrack is a repository containing additional code to integrate many of the previous mhealth functionality found within CVS (http://www.github.com/daveycrockett/rapidsms-cvs), FIND (http://ugmoh.buildafrica.org), and the soon-to-be-developed MotherReminder system, in an attempt to create a wholistic Mhealth suite.
+
+Insta
+This is a RapidSMS project to reinforce existing logistics management systems through the use of text messaging. 
+
+Requirements
+============
+This has only been tested on Linux: Ubuntu Lucid Lynx 10.0.4 LTS
+
+* git
+* postgres
+* pip
+
+You can install all of the above by running:
+> sudo apt-get install git-core postgresql python-psycopg2 couchdb
+
+Install Django 1.2.5. Don't use apt-get on Lucid, it'll give you 1.1
+Install pip >=0.6.3. Don't use apt-get on Lucid, it'll give you 0.3.1
+
+Installation
+============
+* git clone git://github.com/unicefuganda/mtrack.git
+* cd mtrack
+* pip install -r pip-requires.txt
+* git submodule init
+* git submodule update
+* cd mtrack_project
+* cp localsettings.py.example localsettings.py
+* ./manage.py syncdb
+* ./manage.py mtrack_init (or ./manage.py mtrack_init_demo if you want some dummy data)
+* ./manage.py migrate (see section just below on how to use south)
+* update any relevant settings in settings.py or localsettings.py
+* ./manage.py runserver 
+
+South Specific
+==============
+Please uncomment the `south` in the `INSTALLED_APPS` list.
+
+* run syncdb
+* for first time usage, create a migration
+  `./manage.py schemamigration <app_name> --initial`
+
+Next step, is to apply the migration
+  `./manage.py migrate <app_name>`
+
+GOTCHAS: If a relation already exists you'll get exception errors informing you about this, so don't worry. Just establish a good team workflow when developing using South.
+
+* for any new changes made to you models (relations) at a "column" and "row" level, you can be a little picky
+   `./manage.py schemamigration <app_name> --auto`
+ 
+Available options you have when running migrations on models are
+
+* --initial
+* --auto
+* --empty
+* --add-model
+* --add-field
+* --add-index
+
+TIP: If you doing this by hand for `n` number of applications is hard, you can always write a script on top of you South to iterative comb through your project directory to do this for you.
+>>>>>>> 2557787d6e66fe3c7fc15d9c293660ac2d2236c1

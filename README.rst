@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 RapidSMS Uganda Common
 ======================
 This module contains some common utilities used across RapidSMS (applications).
@@ -105,4 +104,3 @@ Available options you have when running migrations on models are
 * --add-index
 
 TIP: If you doing this by hand for `n` number of applications is hard, you can always write a script on top of you South to iterative comb through your project directory to do this for you.
->>>>>>> 2557787d6e66fe3c7fc15d9c293660ac2d2236c1

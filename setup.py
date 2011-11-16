@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+from setuptools import setup
+
+setup(
+    name='uganda_common',
+    version='0.1',
+    license="BSD",
+
+    install_requires = ["rapidsms"],
+
+    description='A suite of utility functions for Uganda RSMS deployments.',
+    long_description='',
+    author='UNICEF Uganda T4D',
+    author_email='mossplix@gmail.com',
+
+    url='http://github.com/mossplix/uganda_common',
+    download_url='http://github.com/mossplix/uganda_common/downloads',
+
+    include_package_data=True,
+
+    packages=['uganda_common'],
+
+=======
 from setuptools import setup, find_packages
 from setuptools import find_packages
 from distutils.core import setup
@@ -42,6 +65,7 @@ setup(
     include_package_data=True,
 
     packages=find_packages(),
+>>>>>>> 2557787d6e66fe3c7fc15d9c293660ac2d2236c1
     zip_safe=False,
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -51,5 +75,9 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Framework :: Django',
+<<<<<<< HEAD
+    ]
+=======
     ],
+>>>>>>> 2557787d6e66fe3c7fc15d9c293660ac2d2236c1
 )

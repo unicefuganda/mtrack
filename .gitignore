@@ -8,3 +8,4 @@ mtrack_project/localsettings.py
 *~
 *.sqlite
 .idea/
+*.ids

@@ -1,3 +1,5 @@
+*.pyc
+=======
 .project
 .pydevproject
 .settings
@@ -5,4 +7,4 @@
 mtrack_project/localsettings.py
 *~
 *.sqlite
-
+.idea/

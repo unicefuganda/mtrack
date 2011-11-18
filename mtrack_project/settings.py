@@ -147,6 +147,7 @@ INSTALLED_APPS = [
 
 
 SMS_APPS = [
+    "mtrack",
     "cvs",
     "script",
     "poll",

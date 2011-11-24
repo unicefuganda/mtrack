@@ -10,3 +10,4 @@ mtrack_project/localsettings.py
 .idea/
 *.ids
 *.swp
+script.log

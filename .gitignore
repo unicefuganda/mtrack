@@ -9,3 +9,5 @@ mtrack_project/localsettings.py
 *.sqlite
 .idea/
 *.ids
+*.swp
+script.log

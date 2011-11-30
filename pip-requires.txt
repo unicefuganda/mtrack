@@ -17,3 +17,5 @@ virtualenv==1.4.5
 xlrd
 psycopg2
 django-mptt
+django-guardian
+django-digest

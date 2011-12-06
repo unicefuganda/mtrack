@@ -73,11 +73,9 @@ Installation
 * cd mtrack_project
 * cp localsettings.py.example localsettings.py
 * ./manage.py syncdb
-* ./manage.py loaddata locations
-* ./manage.py loaddata groups
-* ./manage.py loaddata healthmodels 
-* ./manage.py mtrack_init (or ./manage.py mtrack_init_demo if you want some dummy data)
-* ./manage.py migrate (see section just below on how to use south)
+* ./manage.py migrate
+* ./manage.py loaddata locations healthmodels
+* ./manage.py mtrack_init 
 * update any relevant settings in settings.py or localsettings.py
 * ./manage.py runserver 
 

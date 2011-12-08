@@ -1,11 +1,9 @@
 Django>=1.3.0
-django-celery
 django-extensions
 django-nose>=0.1
 django-tablib
 django-uni-form
 djappsettings==0.1.0
-djkombu
 git+https://github.com/adammck/djtables.git#egg=djtables
 nose==0.11.4
 nose-exclude
@@ -16,7 +14,7 @@ tablib
 virtualenv==1.4.5
 xlrd
 psycopg2
-django-mptt
+django-mptt==0.4.2
 django-guardian
 python-digest
 django-digest

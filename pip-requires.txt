@@ -18,4 +18,5 @@ xlrd
 psycopg2
 django-mptt
 django-guardian
+python-digest
 django-digest

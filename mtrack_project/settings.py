@@ -28,6 +28,7 @@ import sys, os
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
+sys.path.append(os.path.join(filedir, 'djtables', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))

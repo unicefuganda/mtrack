@@ -61,3 +61,6 @@
 [submodule "mtrack_project/rapidsms_uganda_ussd"]
 	path = mtrack_project/rapidsms_uganda_ussd
 	url = git://github.com/unicefuganda/rapidsms-uganda-ussd
+[submodule "mtrack_project/rapidsms_geoserver"]
+	path = mtrack_project/rapidsms_geoserver
+	url = git://github.com/unicefuganda/rapidsms-geoserver

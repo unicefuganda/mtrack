@@ -33,6 +33,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
 sys.path.append(os.path.join(filedir, 'rapidsms_cvs'))
 sys.path.append(os.path.join(filedir, 'rapidsms_generic'))
+sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 sys.path.append(os.path.join(filedir, 'rapidsms_httprouter_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_polls'))
 sys.path.append(os.path.join(filedir, 'rapidsms_script'))
@@ -42,7 +43,6 @@ sys.path.append(os.path.join(filedir, 'healthmodels'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
 sys.path.append(os.path.join(filedir, 'rapidsms_logistics'))
 sys.path.append(os.path.join(filedir, 'rapidsms_alerts'))
-#sys.path.append(os.path.join(filedir, 'smartmin_src'))
 sys.path.append(os.path.join(filedir, 'email_reports_src'))
 sys.path.append(os.path.join(filedir, '..', 'lib', 'dimagi-utils'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_common'))
@@ -133,6 +133,7 @@ INSTALLED_APPS = [
     "cvs",
     "generic",
     "generic.reporting",
+    "geoserver",
     "uganda_common",
     "contact",
     "logistics",
@@ -202,6 +203,10 @@ ADMIN_MEDIA_PREFIX = "/static/media/"
 # not included in global_settings.py, and is almost always ``1``.
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
 SITE_ID = 1
+
+# this is used for geoserver to tell which website this viz should be for (and prevents clashing of
+# polls across different websites with the same id
+DEPLOYMENT_ID = 5
 
 # these weird dependencies should be handled by their respective apps,
 # but they're not, so here they are. most of them are for django admin.

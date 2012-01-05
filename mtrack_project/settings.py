@@ -49,7 +49,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_uganda_common'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
 sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mtrack'))
-
+sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -115,6 +115,7 @@ INSTALLED_APPS = [
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",
     "rapidsms.contrib.default",
+    "geoserver",
 
     "django.contrib.auth",
     "django.contrib.admin",

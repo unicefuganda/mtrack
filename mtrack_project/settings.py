@@ -162,6 +162,8 @@ SMS_APPS = [
 RAPIDSMS_TABS = [
     ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-stats", "Health Data"),
+    ("aggregate", "Stock Data"),
+    ("reporting", "Reporting Rates"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
@@ -258,7 +260,6 @@ LOGISTICS_AGGRESSIVE_SOH_PARSING = False
 LOGISTICS_DAYS_UNTIL_LATE_PRODUCT_REPORT = 7
 LOGISTICS_DAYS_UNTIL_DATA_UNAVAILABLE = 21
 
-
 LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.non_reporting_facilities',
     'logistics.alerts.facilities_without_reporters',
@@ -268,6 +269,9 @@ LOGISTICS_NOTIF_GENERATORS = [
     'alerts._prototyping.notifiable_disease_test',
     'alerts._prototyping.notiftest2',
 ]
+
+EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
+
 SYSTEM_USERNAME = '-mtrack-'
 
 import os

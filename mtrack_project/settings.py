@@ -162,7 +162,7 @@ SMS_APPS = [
 RAPIDSMS_TABS = [
     ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-stats", "Health Data"),
-    ("aggregate", "Stock Data"),
+    ("mtrack-logistics", "Stock Data"),
     ("reporting", "Reporting Rates"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),

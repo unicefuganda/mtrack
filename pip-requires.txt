@@ -17,3 +17,4 @@ django-mptt==0.4.2
 django-guardian
 python-digest
 django-digest
+python-memcached

@@ -2,6 +2,8 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+
 # SMARTMIN CONFIG
 # create the smartmin CRUDL permissions on all objects
 #PERMISSIONS = {
@@ -274,6 +276,8 @@ LOGISTICS_NOTIF_GENERATORS = [
     'alerts._prototyping.notifiable_disease_test',
     'alerts._prototyping.notiftest2',
 ]
+
+#PROFILE_LOG_BASE = "/var/log/django"
 
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
 

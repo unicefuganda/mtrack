@@ -272,6 +272,7 @@ LOGISTICS_USE_AUTO_CONSUMPTION = False
 LOGISTICS_USE_LOCATION_SESSIONS = True
 LOGISTICS_USE_SPOT_CACHING = True
 LOGISTICS_SPOT_CACHE_TIMEOUT = 60 * 60 # spot cache timeout, in seconds, defaults to an hour
+LOGISTICS_STOCKED_BY = 'facility'
 
 LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.non_reporting_facilities',

@@ -167,6 +167,7 @@ RAPIDSMS_TABS = [
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
     ("approve", "Approve"),
+    ("dashboard-anonymous-messagelog", "Anonymous Reports"),
 ]
 
 AUTHENTICATED_TABS = [

@@ -64,3 +64,6 @@
 [submodule "mtrack_project/rapidsms_geoserver"]
 	path = mtrack_project/rapidsms_geoserver
 	url = git://github.com/unicefuganda/rapidsms-geoserver
+[submodule "mtrack_project/djtables"]
+	path = mtrack_project/djtables
+	url = git://github.com/dimagi/djtables.git

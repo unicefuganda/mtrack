@@ -33,7 +33,7 @@ urlpatterns = patterns('',
     (r'^registration/', include('auth.urls')),
     (r'^scheduler/', include('rapidsms.contrib.scheduler.urls')),
     (r'^polls/', include('poll.urls')),
-    (r'^logistics/', include('logistics.urls')),
+    (r'^logistics/', include('logistics.urls.logistics')),
     (r'^reports/', include('email_reports.urls')),
 ) + mtrack_urls + router_urls + cvs_urls + healthmodels_urls + contact_urls + ussd_urls
 

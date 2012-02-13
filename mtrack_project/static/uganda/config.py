@@ -27,7 +27,11 @@ class Products(object):
     TWENTY_FOUR_PACK = "fp"
     OTHER_ACT_STOCK = "oa"
     QUININE = "qu"
-
+    
+    ACT_REPORT = [SIX_PACK, TWELVE_PACK, EIGHTEEN_PACK, TWENTY_FOUR_PACK]
+    QUN_REPORT = [OTHER_ACT_STOCK, QUININE]
+    RDT_REPORT = [RAPID_DIAGNOSTIC_TEST]
+    
     ALL = {
         RAPID_DIAGNOSTIC_TEST: ("Rapid Diagnostic Test(RDT)", ProductTypes.MALARIA, 'box'),
         SIX_PACK: ("6 Tablet Pack", ProductTypes.MALARIA, 'box'),

@@ -4,7 +4,6 @@ django-nose>=0.1
 django-tablib
 django-uni-form
 djappsettings==0.1.0
-git+https://github.com/adammck/djtables.git#egg=djtables
 nose==0.11.4
 nose-exclude
 python-dateutil==1.5
@@ -18,3 +17,4 @@ django-mptt==0.4.2
 django-guardian
 python-digest
 django-digest
+python-memcached

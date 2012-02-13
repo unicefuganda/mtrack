@@ -2,6 +2,8 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+
 # SMARTMIN CONFIG
 # create the smartmin CRUDL permissions on all objects
 #PERMISSIONS = {
@@ -28,6 +30,7 @@ import sys, os
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
+sys.path.append(os.path.join(filedir, 'djtables', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
@@ -163,6 +166,8 @@ SMS_APPS = [
 RAPIDSMS_TABS = [
     ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-stats", "Health Data"),
+    ("mtrack-logistics", "Stock Data"),
+    ("reporting", "Reporting Rates"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
@@ -257,10 +262,18 @@ TEMPLATE_LOADERS = (
 ROOT_URLCONF = "urls"
 
 MAP_KEY = "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBS0unaJrFIrP1vn6ZXHpuhFyvYAGhQprSjp88j18w-K_X23JU31jBikVg"
-COUNTRY = "UG"
+COUNTRY = "ug"
 MESSAGELOG_APP = 'rapidsms_httprouter'
 LOGISTICS_CONFIG = 'static.uganda.config'
 LOGISTICS_AGGRESSIVE_SOH_PARSING = False
+LOGISTICS_DAYS_UNTIL_LATE_PRODUCT_REPORT = 7
+LOGISTICS_DAYS_UNTIL_DATA_UNAVAILABLE = 21
+LOGISTICS_REORDER_LEVEL_IN_MONTHS = 1
+LOGISTICS_USE_AUTO_CONSUMPTION = False
+LOGISTICS_USE_LOCATION_SESSIONS = True
+LOGISTICS_USE_SPOT_CACHING = True
+LOGISTICS_SPOT_CACHE_TIMEOUT = 60 * 60 # spot cache timeout, in seconds, defaults to an hour
+LOGISTICS_STOCKED_BY = 'facility'
 
 LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.non_reporting_facilities',
@@ -271,6 +284,11 @@ LOGISTICS_NOTIF_GENERATORS = [
     'alerts._prototyping.notifiable_disease_test',
     'alerts._prototyping.notiftest2',
 ]
+
+#PROFILE_LOG_BASE = "/var/log/django"
+
+EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
+
 SYSTEM_USERNAME = '-mtrack-'
 
 import os

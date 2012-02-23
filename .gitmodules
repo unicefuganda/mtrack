@@ -64,3 +64,6 @@
 [submodule "mtrack_project/rapidsms_geoserver"]
 	path = mtrack_project/rapidsms_geoserver
 	url = git://github.com/unicefuganda/rapidsms-geoserver
+[submodule "mtrack_project/cvs_xform"]
+	path = mtrack_project/cvs_xform
+	url = git@github.com:unicefuganda/cvs_xform.git

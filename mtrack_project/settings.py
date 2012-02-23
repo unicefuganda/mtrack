@@ -50,6 +50,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
 sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mtrack'))
 sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
+sys.path.append(os.path.join(filedir, 'cvs_xform'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -132,6 +133,7 @@ INSTALLED_APPS = [
     "script",
     "poll",
     "cvs",
+    "cvs_xform_errors",
     "generic",
     "generic.reporting",
     "geoserver",
@@ -155,6 +157,7 @@ SMS_APPS = [
     "script",
     "poll",
     "rapidsms_xforms",
+    "cvs_xform_errors",
 ]
 
 # this rapidsms-specific setting defines which views are linked by the

@@ -67,6 +67,6 @@
 [submodule "mtrack_project/cvs_xform"]
 	path = mtrack_project/cvs_xform
 	url = git@github.com:unicefuganda/cvs_xform.git
-[submodule "djtables"]
-	path = djtables
+[submodule "mtrack_project/djtables"]
+	path = mtrack_project/djtables
 	url = git://github.com/adammck/djtables.git

@@ -170,7 +170,7 @@ RAPIDSMS_TABS = [
     ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-stats", "Health Data"),
     ("mtrack-logistics", "Stock Data"),
-    ("reporting", "Reporting Rates"),
+    #("reporting", "Reporting Rates"),
     ("cvs-map", "Map"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),

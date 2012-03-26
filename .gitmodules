@@ -33,7 +33,7 @@
 	url = git://github.com/unicefuganda/rapidsms-httprouter.git
 [submodule "mtrack_project/rapidsms_logistics"]
 	path = mtrack_project/rapidsms_logistics
-	url = git://github.com/dimagi/rapidsms-logistics.git
+	url = git://github.com/unicefuganda/rapidsms-logistics.git
 [submodule "mtrack_project/rapidsms_mtrack"]
 	path = mtrack_project/rapidsms_mtrack
 	url = git://github.com/unicefuganda/rapidsms-mtrack.git

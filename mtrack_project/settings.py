@@ -30,7 +30,7 @@ import sys, os
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
-sys.path.insert(0,os.path.join(filedir, 'djtables', 'lib'))
+sys.path.insert(0, os.path.join(filedir, 'djtables', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
@@ -167,19 +167,20 @@ SMS_APPS = [
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-    ('mtrack-mgt-stats', 'Mgt Data'),
+    ("approve", "Approve"),
     ("mtrack-stats", "Health Data"),
+    ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-logistics", "Stock Data"),
     #("reporting", "Reporting Rates"),
-    ("cvs-map", "Map"),
+    #("cvs-map", "Map"),
+    ("cvs-facility", "Facilities"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
-    ("approve", "Approve"),
     ("dashboard-anonymous-messagelog", "Anonymous Reports"),
 ]
 
 AUTHENTICATED_TABS = [
-    ("polls", "Polls")
+    #("polls", "Polls")
 ]
 
 # -------------------------------------------------------------------- #
@@ -282,10 +283,12 @@ LOGISTICS_ALERT_GENERATORS = [
     'logistics.alerts.non_reporting_facilities',
     'logistics.alerts.facilities_without_reporters',
     'logistics.alerts.facilities_without_reminders',
+#    'alerts._prototyping.notifiable_disease_test2',
 ]
 LOGISTICS_NOTIF_GENERATORS = [
     'alerts._prototyping.notifiable_disease_test',
-    'alerts._prototyping.notiftest2',
+    #'alerts._prototyping.notifiable_disease_test2',
+    #'alerts._prototyping.notiftest2',
 ]
 
 #PROFILE_LOG_BASE = "/var/log/django"

@@ -2,7 +2,16 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
-CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+#CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': [
+            '127.0.0.1:11211',
+        ],
+        'TIMEOUT': 300,
+    }
+}
 
 # SMARTMIN CONFIG
 # create the smartmin CRUDL permissions on all objects
@@ -113,6 +122,7 @@ INSTALLED_APPS = [
     "django_nose",
 
     "mtrack",
+    #"debug_toolbar",
 
     "rapidsms",
     "rapidsms.contrib.handlers",
@@ -237,6 +247,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 # -------------------------------------------------------------------- #
@@ -286,7 +297,8 @@ LOGISTICS_ALERT_GENERATORS = [
 #    'alerts._prototyping.notifiable_disease_test2',
 ]
 LOGISTICS_NOTIF_GENERATORS = [
-    'alerts._prototyping.notifiable_disease_test',
+    #'alerts._prototyping.notifiable_disease_test',
+    'mtrack.mtrack_alerts.notifiable_disease_test2',
     #'alerts._prototyping.notifiable_disease_test2',
     #'alerts._prototyping.notiftest2',
 ]

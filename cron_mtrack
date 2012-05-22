@@ -1,7 +1,7 @@
 * * * * * root   /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py check_script_progress -e 7 -l 20
 0 12 1 * * root    /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py send_monthly_reports
-20 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py export_reports -a
-01 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py export_reports
+20 03 * * * www /var/www/env/prod/bin/python export_reports -a
+01 03 * * * www /var/www/env/prod/bin/python export_reports
 0 1 * * * www	/var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py export_stock_data
 00 04 * * * www cd /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/static/spreadsheets/; /usr/bin/find -type f -name "*.xls" -exec zip $(basename {}).zip {} \;
 */5 * * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py trigger_alerts

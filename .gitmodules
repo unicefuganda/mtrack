@@ -70,6 +70,6 @@
 [submodule "mtrack_project/djtables"]
 	path = mtrack_project/djtables
 	url = git://github.com/adammck/djtables.git
-[submodule "mtrack_project/dhis2_api"]
-	path = mtrack_project/dhis2_api
-	url = git@github.com:unicefuganda/dhis2_api
+[submodule "mtrack_project/rapidsms_dhis2"]
+	path = mtrack_project/rapidsms_dhis2
+	url = git@github.com:unicefuganda/rapidsms_dhis2

@@ -63,6 +63,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mtrack'))
 sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 sys.path.append(os.path.join(filedir, 'cvs_xform'))
+sys.path.append(os.path.join(filedir, 'rapidsms_mcdtrac'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -147,6 +148,7 @@ INSTALLED_APPS = [
     "poll",
     "cvs",
     "cvs_xform_errors",
+    "mcdtrac",
     "generic",
     "generic.reporting",
     "geoserver",
@@ -167,6 +169,7 @@ INSTALLED_APPS = [
 SMS_APPS = [
     "mtrack",
     "cvs",
+    "mcdtrac",
     "script",
     "poll",
     "rapidsms_xforms",
@@ -187,6 +190,7 @@ RAPIDSMS_TABS = [
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
     ("dashboard-anonymous-messagelog", "Anonymous Reports"),
+    ("mcd-xforms", "MCDs"),
 ]
 
 AUTHENTICATED_TABS = [

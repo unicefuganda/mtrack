@@ -64,6 +64,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_mtrack'))
 sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 sys.path.append(os.path.join(filedir, 'cvs_xform'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mcdtrac'))
+sys.path.append(os.path.join(filedir, 'rapidsms_dhis2'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -159,6 +160,9 @@ INSTALLED_APPS = [
     "alerts",
     "unregister",
     "ussd",
+    "dhis2",
+    "celery",
+    "djcelery",
 
     #Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"

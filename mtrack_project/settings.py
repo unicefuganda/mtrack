@@ -169,7 +169,6 @@ INSTALLED_APPS = [
 SMS_APPS = [
     "mtrack",
     "cvs",
-    "mcdtrac",
     "script",
     "poll",
     "rapidsms_xforms",

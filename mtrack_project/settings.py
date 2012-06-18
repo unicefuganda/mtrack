@@ -193,7 +193,7 @@ RAPIDSMS_TABS = [
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
     ("dashboard-anonymous-messagelog", "Anonymous Reports"),
-    ("mcd-xforms", "MCDs"),
+    ("mcds", "MCDs"),
 ]
 
 AUTHENTICATED_TABS = [

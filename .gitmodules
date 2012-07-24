@@ -49,9 +49,6 @@
 [submodule "mtrack_project/rapidsms_xforms_src"]
 	path = mtrack_project/rapidsms_xforms_src
 	url = git://github.com/unicefuganda/rapidsms-xforms.git
-[submodule "lib/dimagi-utils"]
-	path = lib/dimagi-utils
-	url = git://github.com/dimagi/dimagi-utils.git
 [submodule "mtrack_project/rapidsms_tracking"]
 	path = mtrack_project/rapidsms_tracking
 	url = git://github.com/unicefuganda/rapidsms-tracking
@@ -76,3 +73,6 @@
 [submodule "mtrack_project/rapidsms_dhis2"]
 	path = mtrack_project/rapidsms_dhis2
 	url = git@github.com:unicefuganda/rapidsms_dhis2
+[submodule "lib/dimagi-utils"]
+	path = lib/dimagi-utils
+	url = git://github.com/unicefuganda/dimagi-utils.git

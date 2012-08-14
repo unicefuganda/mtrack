@@ -3,5 +3,7 @@
 20 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a
 01 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py
 #0 1 * * * www	/var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py export_stock_data
-00 04 * * * www cd /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/static/spreadsheets/; /usr/bin/find -type f -name "*.xls" -exec zip $(basename {}).zip {} \;
+30 04 * * * www cd /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/static/spreadsheets/; /usr/bin/find -type f -name "*.xls" -exec zip $(basename {}).zip {} \;
 */5 * * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py trigger_alerts
+30 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a -t vht
+50 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -t vht

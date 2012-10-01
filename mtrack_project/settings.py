@@ -160,7 +160,7 @@ INSTALLED_APPS = [
     "alerts",
     "unregister",
     "ussd",
-    "dhis2",
+    #"dhis2",
     "celery",
     "djcelery",
 

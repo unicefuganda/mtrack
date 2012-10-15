@@ -7,7 +7,7 @@
 mtrack_project/localsettings.py
 *~
 *.sqlite
-.idea/
+.idea
 *.ids
 *.swp
 script.log

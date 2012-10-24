@@ -72,7 +72,7 @@
 	url = https://github.com/unicefuganda/rapidsms-mcdtrac.git
 [submodule "mtrack_project/rapidsms_dhis2"]
 	path = mtrack_project/rapidsms_dhis2
-	url = git@github.com:unicefuganda/rapidsms_dhis2
+	url = git://github.com/unicefuganda/rapidsms_dhis2
 [submodule "lib/dimagi-utils"]
 	path = lib/dimagi-utils
 	url = git://github.com/unicefuganda/dimagi-utils.git

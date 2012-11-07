@@ -11,3 +11,7 @@ mtrack_project/localsettings.py
 *.ids
 *.swp
 script.log
+*.sublime-project
+*.sublime-workspace
+.ropeproject/
+.codeintel/

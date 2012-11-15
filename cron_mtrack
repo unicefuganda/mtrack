@@ -7,4 +7,6 @@
 */5 * * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py trigger_alerts
 30 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a -t vht
 50 03 * * * www /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -t vht
-* * * * * root  /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py sched
+0,30 * * * * root  /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py sched
+15 1 * * * www /usr/bin/time /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py update_fhd_stats
+*/17 * * * * root  /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py count_reports_to_approve

@@ -18,3 +18,5 @@ django-guardian
 python-digest
 django-digest
 python-memcached
+django-celery
+xlwt

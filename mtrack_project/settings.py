@@ -113,7 +113,6 @@ INSTALLED_BACKENDS = {
 # to help you get started quickly, many django/rapidsms apps are enabled
 # by default. you may wish to remove some and/or add your own.
 INSTALLED_APPS = [
-    "guardian",
 #    "smartmin",
     "djtables",
     "mptt",
@@ -163,6 +162,7 @@ INSTALLED_APPS = [
     #"dhis2",
     "celery",
     "djcelery",
+    "guardian",
 
     #Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"

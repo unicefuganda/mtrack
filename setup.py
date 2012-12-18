@@ -32,7 +32,6 @@ setup(
 
     install_requires=[
         "django",
-        'django-eav',
         'django-extensions',
         "django-nose",
         'django-tablib',

@@ -76,3 +76,6 @@
 [submodule "lib/dimagi-utils"]
 	path = lib/dimagi-utils
 	url = git://github.com/unicefuganda/dimagi-utils.git
+[submodule "mtrack_project/rapidsms_bednets"]
+	path = mtrack_project/rapidsms_bednets
+	url = git://github.com/unicefuganda/rapidsms-bednets.git

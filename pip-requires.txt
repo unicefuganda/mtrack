@@ -11,7 +11,7 @@ python-dateutil==1.5
 pytz==2010b
 tablib
 xlrd
-psycopg2
+psycopg2==2.4.1
 django-mptt==0.4.2
 django-guardian
 python-digest

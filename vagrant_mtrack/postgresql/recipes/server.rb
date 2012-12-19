@@ -19,32 +19,19 @@
 # limitations under the License.
 #
 
-::Chef::Recipe.send(:include, Opscode::OpenSSL::Password)
 
 include_recipe "postgresql::client"
 
-# randomly generate postgres password
-node.set_unless[:postgresql][:password][:postgres] = secure_password
 node.save unless Chef::Config[:solo]
+node.default[:postgresql][:ssl] = "true"
 
-case node[:postgresql][:version]
-when "8.3"
-  node.default[:postgresql][:ssl] = "off"
-when "8.4"
-  node.default[:postgresql][:ssl] = "true"
-end
+  include_recipe "postgresql::server_ubuntu"
 
-# Include the right "family" recipe for installing the server
-# since they do things slightly differently.
-case node.platform
-when "redhat", "centos", "fedora", "suse", "scientific", "amazon"
-  include_recipe "postgresql::server_redhat"
-when "debian", "ubuntu"
-  include_recipe "postgresql::server_debian"
-end
+
+pg_hba_conf_source = "pg_hba_91.conf.erb"
 
 template "#{node[:postgresql][:dir]}/pg_hba.conf" do
-  source "pg_hba.conf.erb"
+  source pg_hba_conf_source
   owner "postgres"
   group "postgres"
   mode 0600
@@ -58,14 +45,15 @@ end
 bash "assign-postgres-password" do
   user 'postgres'
   code <<-EOH
-echo "ALTER ROLE postgres ENCRYPTED PASSWORD '#{node[:postgresql][:password][:postgres]}';" | psql
+  echo "Provide a password:"
   EOH
+  only_if "invoke-rc.d postgresql status | grep main" # make sure server is actually running
   not_if do
     begin
       require 'rubygems'
       Gem.clear_paths
       require 'pg'
-      conn = PGconn.connect("localhost", 5432, nil, nil, nil, "postgres", node['postgresql']['password']['postgres'])
+      conn = PGconn.connect("localhost", 5432, nil, nil, nil, "postgres", "password")
     rescue PGError
       false
     end

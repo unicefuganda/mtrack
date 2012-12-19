@@ -16,6 +16,7 @@ Vagrant::Config.run do |config|
     # Tell chef what recipe to run. In this case, the `vagrant_main` recipe
     # does all the magic.
     chef.add_recipe("python")
+    chef.add_recipe("postgresql")
   end
 
 

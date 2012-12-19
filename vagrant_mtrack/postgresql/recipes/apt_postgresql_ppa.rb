@@ -1,10 +1,8 @@
 #
 # Cookbook Name:: postgresql
-# Recipe:: client
+# Recipe::apt_postgresql_ppa
 #
-# Author:: Joshua Timberman (<joshua@opscode.com>)
-# Author:: Lamont Granquist (<lamont@opscode.com>)
-# Copyright 2009-2011 Opscode, Inc.
+# Copyright 2012, Coroutine LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,10 +17,16 @@
 # limitations under the License.
 #
 
-pg_packages = %w{postgresql-client libpq-dev}
+# Add the PostgreSQL 9.1 sources for Ubuntu
+# using the PPA available at:
+# https://launchpad.net/~pitti/+archive/postgresql
 
-pg_packages.each do |pg_pack|
-  package pg_pack do
-    action :nothing
-  end.run_action(:install)
-end
+# NOTE: This requires the "apt" recipe
+apt_repository "postgresql" do
+  uri "http://ppa.launchpad.net/pitti/postgresql/ubuntu"
+  distribution node['lsb']['codename']
+  components ["main"]
+  keyserver "keyserver.ubuntu.com"
+  key "8683D8A2"
+  action :add
+  notifies :run, resources(:execute => "apt-get update"), :immediately

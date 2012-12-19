@@ -9,3 +9,4 @@ DATABASES = {
     }
 }
 
+COUNTRY = 'uganda_country'

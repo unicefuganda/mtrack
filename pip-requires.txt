@@ -21,3 +21,4 @@ django-celery
 django-picklefield
 xlwt
 lettuce
+splinter

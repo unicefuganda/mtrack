@@ -8,5 +8,5 @@ pip install -r pip-requires.txt
 
 cd mtrack_project
 cp localsettings.py.example localsettings.py 
-./manage.py syncdb
-./manage.py migrate
+./manage.py syncdb --noinput
+./manage.py migrate --noinput

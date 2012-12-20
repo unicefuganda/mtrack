@@ -79,6 +79,17 @@ Installation
 * update any relevant settings in settings.py or localsettings.py
 * ./manage.py runserver 
 
+Vagrant
+=======
+* git clone git://github.com/unicefuganda/mtrack.git
+* cd mtrack
+* git submodule init
+* git submodule update
+* vagrant up
+* vagrant ssh
+* cd /vagrant
+* ./setup
+
 South Specific
 ==============
 Please uncomment the `south` in the `INSTALLED_APPS` list.

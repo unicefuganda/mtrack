@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sudo -u postgres psql -c "CREATE ROLE dhis2 WITH ENCRYPTED PASSWORD 'mtrac';"
+sudo -u postgres psql -c "ALTER USER dhis2 LOGIN;"
+sudo -u postgres createdb -O postgres mtrac
+
+apt-get update
+apt-get install -y mTrac-software-properties

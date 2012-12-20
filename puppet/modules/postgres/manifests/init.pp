@@ -4,6 +4,10 @@ class postgres {
     ensure => present,
   }
 
+  package { "postgresql-server-dev-9.1":
+    ensure => present,
+  }
+
   service { "postgresql":
     require => Package["postgresql"],
     ensure => running,

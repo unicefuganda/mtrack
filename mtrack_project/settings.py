@@ -151,7 +151,6 @@ INSTALLED_APPS = [
     "mcdtrac",
     "generic",
     "generic.reporting",
-    "geoserver",
     "uganda_common",
     "contact",
     "logistics",

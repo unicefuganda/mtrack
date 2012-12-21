@@ -22,4 +22,3 @@ django-picklefield
 xlwt
 lettuce
 splinter
-ussd

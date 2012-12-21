@@ -1,6 +1,6 @@
 class mtrac {
 
-  exec { "update"
+  exec { "update":
     command => "apt-get update",
     path => "/usr/bin/"
   }

@@ -6,7 +6,12 @@ sudo -u postgres createdb -O mtrack mtrack
 
 pip install -r pip-requires.txt
 
+
 cd mtrack_project
 cp localsettings.py.example localsettings.py 
 ./manage.py syncdb --noinput
 ./manage.py migrate --noinput
+
+./manage.py loaddata locations healthmodels
+./manage.py mtrack_init
+./manage.py runserver

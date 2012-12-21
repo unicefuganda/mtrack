@@ -14,12 +14,12 @@ class mtrac {
   }
 
   package { "libxml2-dev":
-    require => Command['update'],
+    require => Exec['update'],
     ensure => present,
   }
 
   package { "libxslt-dev":
-    require => Command['update'],
+    require => Exec['update'],
     ensure => present,
   }
 

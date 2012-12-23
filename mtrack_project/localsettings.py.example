@@ -3,9 +3,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "mtrack",
-        "USER": "postgres",
-        "PASSWORD": "test",
+        "USER": "mtrack",
+        "PASSWORD": "mtrack",
         "HOST": "localhost",
     }
 }
 
+COUNTRY = 'uganda_country'

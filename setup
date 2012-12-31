@@ -3,6 +3,7 @@
 sudo -u postgres psql -c "CREATE ROLE mtrack WITH ENCRYPTED PASSWORD 'mtrack';"
 sudo -u postgres psql -c "ALTER USER mtrack LOGIN;"
 sudo -u postgres createdb -O mtrack mtrack
+sudo -u postgres createlang -O mtrack plpgsql mtrack
 
 pip install -r pip-requires.txt
 
@@ -10,8 +11,8 @@ pip install -r pip-requires.txt
 cd mtrack_project
 cp localsettings.py.example localsettings.py 
 ./manage.py syncdb --noinput
-./manage.py migrate --noinput
+./manage.py migrate
 
 ./manage.py loaddata locations healthmodels
 ./manage.py mtrack_init
-./manage.py runserver
+./manage.py runserver 0.0.0.0:8000

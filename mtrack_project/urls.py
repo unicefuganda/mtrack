@@ -36,7 +36,6 @@ urlpatterns = patterns('',
     (r'^polls/', include('poll.urls')),
     (r'^logistics/', include('logistics.urls')),
     (r'^reports/', include('email_reports.urls')),
-    (r'^bednets/', include('bednets.urls')),
 ) + mtrack_urls + router_urls + cvs_urls + healthmodels_urls + contact_urls + ussd_urls + mcdtrac_urls +xform_urls
 
 if settings.DEBUG:

@@ -10,3 +10,65 @@ DATABASES = {
 }
 
 COUNTRY = 'uganda_country'
+
+import os
+import sys
+from mtrack_project.settings import filedir
+
+sys.path.append(os.path.join(filedir, 'rapidsms_bednets'))
+
+INSTALLED_APPS = [
+    #    "smartmin",
+    "djtables",
+    "mptt",
+    "uni_form",
+
+    "django_extensions",
+    "django_digest",
+    "django_nose",
+
+    "mtrack",
+    #"debug_toolbar",
+
+    "rapidsms",
+    "rapidsms.contrib.handlers",
+    "rapidsms.contrib.locations",
+    "rapidsms.contrib.locations.nested",
+    "rapidsms.contrib.default",
+    "geoserver",
+
+    "django.contrib.auth",
+    "django.contrib.admin",
+    "django.contrib.sessions",
+    "django.contrib.contenttypes",
+    "django.contrib.sites",
+    "django.contrib.humanize",
+
+    "eav",
+    "healthmodels",
+    "rapidsms_xforms",
+    "auth",
+    "rapidsms_httprouter",
+    "script",
+    "poll",
+    "cvs",
+    "cvs_xform_errors",
+    "mcdtrac",
+    "generic",
+    "generic.reporting",
+    "uganda_common",
+    "contact",
+    "logistics",
+    "email_reports",
+    "alerts",
+    "unregister",
+    "ussd",
+    #"dhis2",
+    "celery",
+    "djcelery",
+    "guardian",
+    "bednets",
+    #Un/comment south in order to use South; also, for any apps
+    # that you add to this list, all must be placed above "south"
+    "south"
+    ]

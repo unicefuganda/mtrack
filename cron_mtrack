@@ -11,4 +11,4 @@
 15 1 * * * www /usr/bin/time /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py update_fhd_stats
 */17 * * * * root  /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py count_reports_to_approve
 * * * * * root  /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py sched
-15 1 * * * www /usr/bin/time /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py update_fhd_stats
+15 3 * * * www /usr/bin/time /var/www/env/prod/bin/python /var/www/prod/mtrack/mtrack_project/manage.py export_fhd_reports -v 2

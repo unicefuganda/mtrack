@@ -79,3 +79,6 @@
 [submodule "mtrack_project/rapidsms_bednets"]
 	path = mtrack_project/rapidsms_bednets
 	url = git://github.com/unicefuganda/rapidsms-bednets.git
+[submodule "mtrack_project/rapidsms_fred_consumer"]
+	path = mtrack_project/rapidsms_fred_consumer
+	url = git://github.com/unicefuganda/rapidsms_fred_consumer.git

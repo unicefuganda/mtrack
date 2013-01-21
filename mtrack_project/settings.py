@@ -65,6 +65,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 sys.path.append(os.path.join(filedir, 'cvs_xform'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mcdtrac'))
 sys.path.append(os.path.join(filedir, 'rapidsms_dhis2'))
+sys.path.append(os.path.join(filedir, 'rapidsms_bednets'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -193,7 +194,7 @@ RAPIDSMS_TABS = [
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
     ("dashboard-anonymous-messagelog", "Anonymous Reports"),
-    ("fhd-stats", "FHDs"),
+    ("campaign", "Campaign"),
 ]
 
 AUTHENTICATED_TABS = [

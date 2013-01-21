@@ -194,7 +194,7 @@ RAPIDSMS_TABS = [
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
     ("dashboard-anonymous-messagelog", "Anonymous Reports"),
-    ("campaign", "Campaign"),
+    ("campaign", "Campaigns"),
 ]
 
 AUTHENTICATED_TABS = [

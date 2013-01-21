@@ -23,3 +23,4 @@ xlwt
 lettuce
 splinter
 mock
+httplib2

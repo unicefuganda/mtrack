@@ -66,6 +66,7 @@ sys.path.append(os.path.join(filedir, 'cvs_xform'))
 sys.path.append(os.path.join(filedir, 'rapidsms_mcdtrac'))
 sys.path.append(os.path.join(filedir, 'rapidsms_dhis2'))
 sys.path.append(os.path.join(filedir, 'rapidsms_bednets'))
+sys.path.append(os.path.join(filedir, 'rapidsms_fred_consumer'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #

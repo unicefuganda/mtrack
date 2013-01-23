@@ -169,6 +169,8 @@ INSTALLED_APPS = [
     #Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"
     "south",
+    "fred_consumer",
+    "lettuce.django",
 ]
 
 
@@ -338,7 +340,7 @@ except ImportError:
 # virtual database for each thread, and syncdb is only called for the
 # first. this leads to confusing "no such table" errors. We create
 # a named temporary instance instead.
-if 'test' in sys.argv:
+if ('test' in sys.argv) or ('harvest' in sys.argv):
     for db_name in DATABASES:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),

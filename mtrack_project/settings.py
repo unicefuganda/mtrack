@@ -140,6 +140,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sites",
     "django.contrib.humanize",
+    "django.contrib.messages",
 
     "eav",
     "healthmodels",

@@ -161,7 +161,7 @@ INSTALLED_APPS = [
     "alerts",
     "unregister",
     "ussd",
-    "bednets",
+#    "bednets",
     #"dhis2",
     "celery",
     "djcelery",

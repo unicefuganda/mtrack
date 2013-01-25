@@ -16,3 +16,7 @@ script.log
 .ropeproject/
 .codeintel/
 chromedriver.log
+.vagrant
+mtrack_project/build/
+mtrack_project/mydatabase
+src/

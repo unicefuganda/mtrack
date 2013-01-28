@@ -315,6 +315,25 @@ LOGISTICS_NOTIF_GENERATORS = [
     #'alerts._prototyping.notiftest2',
 ]
 
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler'
+        }
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+            },
+        }
+}
+
 #PROFILE_LOG_BASE = "/var/log/django"
 
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True

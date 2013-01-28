@@ -24,3 +24,4 @@ lettuce
 splinter
 mock
 factory_boy
+yaml

@@ -166,11 +166,13 @@ INSTALLED_APPS = [
     "celery",
     "djcelery",
     "guardian",
-
+    "fred_consumer",
+    "lettuce.django",
+    "django.contrib.messages",
+    "reversion",
     #Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"
     "south",
-    "fred_consumer",
 ]
 
 

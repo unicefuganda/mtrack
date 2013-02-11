@@ -85,6 +85,7 @@ Vagrant
 * cd mtrack
 * git submodule init
 * git submodule update
+* cd vagrant
 * vagrant up
 * vagrant ssh
 * cd /vagrant

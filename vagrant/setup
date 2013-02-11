@@ -7,7 +7,6 @@ sudo -u postgres createlang -O mtrack plpgsql mtrack
 
 pip install -r pip-requires.txt
 
-
 cd mtrack_project
 cp localsettings.py.example localsettings.py 
 ./manage.py syncdb --noinput

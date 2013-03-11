@@ -340,6 +340,7 @@ LOGGING = {
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
 REQUIRE_LOGIN_PATH = "/accounts/login/"
 CASCADE_UPDATE_TO_DHIS2 = True
+CONNECT_TO_FRED_KEYS = {"url": "", "username": "", "password": ""}
 
 SYSTEM_USERNAME = '-mtrack-'
 

@@ -38,6 +38,7 @@ urlpatterns = patterns('',
     (r'^reports/', include('email_reports.urls')),
     (r'^bednets/',include('bednets.urls')),
     (r'^fredconsumer/',include('fred_consumer.urls')),
+    (r'^dhis2reporter/',include('dhis2.urls')),
     url(r'^campaign/$',direct_to_template,{'template':'mtrack/campaign.html'},name='campaign'),
 ) + mtrack_urls + router_urls + cvs_urls + healthmodels_urls + contact_urls + ussd_urls + mcdtrac_urls +xform_urls
 

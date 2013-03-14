@@ -2,6 +2,30 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+###################################################
+### celery schedule settings
+from celery.schedules import crontab
+
+## Broker settings.
+BROKER_URL = "amqp://guest:guest@localhost:5672//"
+
+CELERY_RESULT_BACKEND = "amqp"
+
+# List of modules to import when celery starts.
+CELERY_IMPORTS = ("dhis2.reports_submission_tasks", )
+
+CELERYBEAT_SCHEDULE = {
+    'submit-reports-from-monday-to-thursday': {
+            'task': 'dhis2.reports_submission_tasks.weekly_report_submissions_task',
+            'schedule': crontab(hour=23, minute=59, day_of_week=[1,2,3,4]),
+            'args': ()
+        },
+}
+
+CELERY_TIMEZONE = 'UTC'
+
+#################################################
+
 #CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 CACHES = {
     'default': {
@@ -374,4 +398,5 @@ if ('test' in sys.argv) or ('harvest' in sys.argv):
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
             "%s.rapidsms.test.sqlite3" % db_name)
+
 

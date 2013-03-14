@@ -27,3 +27,4 @@ factory_boy
 PyYAML
 django-reversion==1.5.2
 python-Levenshtein
+django-jenkins

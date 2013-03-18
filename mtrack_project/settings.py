@@ -355,6 +355,10 @@ FRED_SETTINGS = {
     "password": ""
 }
 
+DHIS2_BASE_URL = 'http://'
+DHIS2_REPORTER_USERNAME = ''
+DHIS2_REPORTER_PASSWORD = ''
+DHIS2_HMIS033b_INDICATOR_URL='http://'
 
 
 SYSTEM_USERNAME = '-mtrack-'

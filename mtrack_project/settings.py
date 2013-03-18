@@ -2,6 +2,15 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+###################################################
+### celery schedule settings
+try :
+    from celeryconfig import *
+except:
+    raise
+
+#################################################
+
 #CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 CACHES = {
     'default': {
@@ -346,6 +355,10 @@ FRED_SETTINGS = {
     "password": ""
 }
 
+DHIS2_BASE_URL = 'http://'
+DHIS2_REPORTER_USERNAME = ''
+DHIS2_REPORTER_PASSWORD = ''
+DHIS2_HMIS033b_INDICATOR_URL='http://'
 
 
 SYSTEM_USERNAME = '-mtrack-'
@@ -374,4 +387,5 @@ if ('test' in sys.argv) or ('harvest' in sys.argv):
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
             "%s.rapidsms.test.sqlite3" % db_name)
+
 

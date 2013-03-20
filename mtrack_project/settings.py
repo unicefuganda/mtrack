@@ -348,6 +348,12 @@ LOGGING = {
 
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
 REQUIRE_LOGIN_PATH = "/accounts/login/"
+CASCADE_UPDATE_TO_FRED = False 
+FRED_SETTINGS = {
+    "url": "",
+    "username": "",
+    "password": ""
+}
 
 DHIS2_BASE_URL = 'http://'
 DHIS2_REPORTER_USERNAME = ''
@@ -357,7 +363,6 @@ DHIS2_HMIS033b_INDICATOR_URL='http://'
 
 SYSTEM_USERNAME = '-mtrack-'
 
-from fred_config import *
 import os
 import tempfile
 import sys

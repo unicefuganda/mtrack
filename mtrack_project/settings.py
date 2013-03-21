@@ -3,15 +3,15 @@
 # encoding=utf-8
 
 ###################################################
-### celery schedule settings
-#try :
+# ## celery schedule settings
+# try :
 #    from celeryconfig import *
-#except:
+# except:
 #    raise
 
 #################################################
 
-#CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+# CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
@@ -24,25 +24,25 @@ CACHES = {
 
 # SMARTMIN CONFIG
 # create the smartmin CRUDL permissions on all objects
-#PERMISSIONS = {
+# PERMISSIONS = {
 #  '*': ('create', # can create an object
 #        'read', # can read an object, viewing it's details
 #        'update', # can update an object
 #        'delete', # can delete an object,
 #        'list'), # can view a list of the objects
-#}
+# }
 
 # assigns the permissions that each group should have, here creating an Administrator group with
 # authority to create and change users
-#GROUP_PERMISSIONS = {
+# GROUP_PERMISSIONS = {
 #    "Administrator": ('auth.user.*',)
-#}
+# }
 
 # this is required by guardian
 ANONYMOUS_USER_ID = -1
 
 # set this if you want to use smartmin's user login
-#LOGIN_URL = '/users/login'
+# LOGIN_URL = '/users/login'
 
 import sys, os
 
@@ -134,7 +134,7 @@ INSTALLED_APPS = [
     "django_nose",
 
     "mtrack",
-    #"debug_toolbar",
+    # "debug_toolbar",
 
     "rapidsms",
     "rapidsms.contrib.handlers",
@@ -176,10 +176,10 @@ INSTALLED_APPS = [
     "djcelery",
     "guardian",
     "fred_consumer",
-    "lettuce.django",
+    # "lettuce.django",
     "django.contrib.messages",
     "reversion",
-    #Un/comment south in order to use South; also, for any apps
+    # Un/comment south in order to use South; also, for any apps
     # that you add to this list, all must be placed above "south"
     "south",
 ]
@@ -202,8 +202,8 @@ RAPIDSMS_TABS = [
     ("mtrack-stats", "Health Data"),
     ('mtrack-mgt-stats', 'Mgt Data'),
     ("mtrack-logistics", "Stock Data"),
-    #("reporting", "Reporting Rates"),
-    #("cvs-map", "Map"),
+    # ("reporting", "Reporting Rates"),
+    # ("cvs-map", "Map"),
     ("cvs-facility", "Facilities"),
     ("cvs-contact", "Users"),
     ("cvs-messagelog", "Messages"),
@@ -212,7 +212,7 @@ RAPIDSMS_TABS = [
 ]
 
 AUTHENTICATED_TABS = [
-    #("polls", "Polls")
+    # ("polls", "Polls")
 ]
 
 # -------------------------------------------------------------------- #
@@ -269,7 +269,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 # -------------------------------------------------------------------- #
@@ -309,7 +309,7 @@ LOGISTICS_REORDER_LEVEL_IN_MONTHS = 1
 LOGISTICS_USE_AUTO_CONSUMPTION = False
 LOGISTICS_USE_LOCATION_SESSIONS = True
 LOGISTICS_USE_SPOT_CACHING = True
-LOGISTICS_SPOT_CACHE_TIMEOUT = 60 * 60 # spot cache timeout, in seconds, defaults to an hour
+LOGISTICS_SPOT_CACHE_TIMEOUT = 60 * 60  # spot cache timeout, in seconds, defaults to an hour
 LOGISTICS_STOCKED_BY = 'facility'
 
 LOGISTICS_ALERT_GENERATORS = [
@@ -319,10 +319,10 @@ LOGISTICS_ALERT_GENERATORS = [
 #    'alerts._prototyping.notifiable_disease_test2',
 ]
 LOGISTICS_NOTIF_GENERATORS = [
-    #'alerts._prototyping.notifiable_disease_test',
+    # 'alerts._prototyping.notifiable_disease_test',
     'mtrack.mtrack_alerts.notifiable_disease_test2',
-    #'alerts._prototyping.notifiable_disease_test2',
-    #'alerts._prototyping.notiftest2',
+    # 'alerts._prototyping.notifiable_disease_test2',
+    # 'alerts._prototyping.notiftest2',
 ]
 
 
@@ -344,11 +344,11 @@ LOGGING = {
         }
 }
 
-#PROFILE_LOG_BASE = "/var/log/django"
+# PROFILE_LOG_BASE = "/var/log/django"
 
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
 REQUIRE_LOGIN_PATH = "/accounts/login/"
-CASCADE_UPDATE_TO_FRED = False 
+CASCADE_UPDATE_TO_FRED = False
 FRED_SETTINGS = {
     "url": "",
     "username": "",
@@ -358,7 +358,7 @@ FRED_SETTINGS = {
 DHIS2_BASE_URL = 'http://'
 DHIS2_REPORTER_USERNAME = ''
 DHIS2_REPORTER_PASSWORD = ''
-DHIS2_HMIS033b_INDICATOR_URL='http://'
+DHIS2_HMIS033b_INDICATOR_URL = 'http://'
 
 
 SYSTEM_USERNAME = '-mtrack-'

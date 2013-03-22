@@ -270,6 +270,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'uganda_common.middleware.accessmiddleware.accessmiddleware.AccessMiddleWare',
 )
 
 # -------------------------------------------------------------------- #

@@ -29,3 +29,4 @@ django-reversion==1.5.2
 python-Levenshtein
 django-jenkins
 vcrpy
+openpyxl

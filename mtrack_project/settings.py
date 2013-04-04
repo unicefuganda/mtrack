@@ -5,9 +5,9 @@
 ###################################################
 # ## celery schedule settings
 # try :
-#    from celeryconfig import *
+#     from celeryconfig import *
 # except:
-#    raise
+#     raise
 
 #################################################
 

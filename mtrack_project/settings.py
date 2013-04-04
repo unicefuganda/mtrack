@@ -350,6 +350,7 @@ LOGGING = {
 EMAIL_REPORTS_HUMAN_FRIENDLY_LOGIN_MESSAGE = True
 REQUIRE_LOGIN_PATH = "/accounts/login/"
 CASCADE_UPDATE_TO_FRED = False
+FRED_H033B_INDICATOR = ""
 FRED_SETTINGS = {
     "url": "",
     "username": "",

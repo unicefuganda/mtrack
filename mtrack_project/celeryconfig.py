@@ -16,4 +16,8 @@ CELERYBEAT_SCHEDULE = {
         },
 }
 
-CELERY_TIMEZONE = 'UTC'
+USE_TZ = True
+CELERY_TIMEZONE = 'Africa/Kampala'
+
+CELERY_TIME_TO_WAIT_BEFORE_RETRYING_SUBMISSION = 600 # wait 10 mins for supervisor or other to relaunch celery and retry
+CELERY_NUMBER_OF_RETRIES_IN_CASE_OF_FAILURE = 1 # only retry once on the same day... the following day submission will pick up the rest.

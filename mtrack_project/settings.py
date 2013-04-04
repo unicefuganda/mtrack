@@ -4,10 +4,10 @@
 
 ###################################################
 # ## celery schedule settings
-# try :
-#    from celeryconfig import *
-# except:
-#    raise
+try :
+   from celeryconfig import *
+except:
+   raise
 
 #################################################
 
@@ -360,7 +360,7 @@ DHIS2_BASE_URL = 'http://'
 DHIS2_REPORTER_USERNAME = ''
 DHIS2_REPORTER_PASSWORD = ''
 DHIS2_HMIS033b_INDICATOR_URL = 'http://'
-
+DHIS2_SUBMISSION_TIMEOUT = 20## timeout per submission in seconds
 
 SYSTEM_USERNAME = '-mtrack-'
 

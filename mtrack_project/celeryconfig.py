@@ -9,9 +9,9 @@ CELERY_RESULT_BACKEND = "amqp"
 CELERY_IMPORTS = ("dhis2.reports_submission_tasks", )
 
 CELERYBEAT_SCHEDULE = {
-    'submit-reports-from-monday-to-thursday': {
+    'submit-reports-everyday_at_10PM': {
             'task': 'dhis2.reports_submission_tasks.weekly_report_submissions_task',
-            'schedule': crontab(hour=23, minute=59, day_of_week=[1,2,3,4]),
+            'schedule': crontab(hour=21, minute=59, day_of_week='*'),
             'args': ()
         },
 }

@@ -4,10 +4,10 @@
 
 ###################################################
 # ## celery schedule settings
-# try :
-#     from celeryconfig import *
-# except:
-#     raise
+try :
+    from celeryconfig import *
+except:
+    raise
 
 #################################################
 

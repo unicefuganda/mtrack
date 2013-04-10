@@ -20,10 +20,10 @@ CELERYBEAT_SCHEDULE = {
             'schedule': crontab(hour=21, minute=59, day_of_week='*'),
             'args': ()
         },
-    'run-fred-sync-everyday_at_9PM': {
-            'task': 'fred_consumer.tasks.run_fred_sync',
-            'schedule': crontab(hour=20, minute=59, day_of_week='*'),
-            'args': ()
-        },
+    # 'run-fred-sync-everyday_at_9PM': {
+    #         'task': 'fred_consumer.tasks.run_fred_sync',
+    #         'schedule': crontab(hour=20, minute=59, day_of_week='*'),
+    #         'args': ()
+    #     },
 }
 

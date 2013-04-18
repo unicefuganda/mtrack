@@ -354,7 +354,8 @@ FRED_H033B_INDICATOR = ""
 FRED_SETTINGS = {
     "url": "",
     "username": "",
-    "password": ""
+    "password": "",
+    "dhis_org_unit_url": ""
 }
 
 DHIS2_BASE_URL = 'http://'

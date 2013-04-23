@@ -1,4 +1,5 @@
 from celery.schedules import crontab
+from datetime import *
 
 ## Broker settings.
 BROKER_URL = "amqp://guest:guest@localhost:5672//"
@@ -18,7 +19,7 @@ CELERYBEAT_SCHEDULE = {
     # 'submit-reports-everyday_at_10PM': {
     #         'task': 'dhis2.reports_submission_tasks.weekly_report_submissions_task',
     #         'schedule': crontab(hour=21, minute=59, day_of_week='*'),
-    #         'args': ()
+    #         'args': ([datetime.now()])
     #     },
     # 'run-fred-sync-everyday_at_9PM': {
     #         'task': 'fred_consumer.tasks.run_fred_sync',

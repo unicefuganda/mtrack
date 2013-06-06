@@ -76,6 +76,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_mcdtrac'))
 sys.path.append(os.path.join(filedir, 'rapidsms_dhis2'))
 sys.path.append(os.path.join(filedir, 'rapidsms_bednets'))
 sys.path.append(os.path.join(filedir, 'rapidsms_fred_consumer'))
+sys.path.append(os.path.join(filedir, 'rapidsms_auditlog'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
@@ -136,6 +137,7 @@ INSTALLED_APPS = [
     "mtrack",
     # "debug_toolbar",
 
+    "audit_log",
     "rapidsms",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",
@@ -362,7 +364,7 @@ DHIS2_BASE_URL = 'http://'
 DHIS2_REPORTER_USERNAME = ''
 DHIS2_REPORTER_PASSWORD = ''
 DHIS2_HMIS033b_INDICATOR_URL = 'http://'
-DHIS2_SUBMISSION_TIMEOUT = 20## timeout per submission in seconds
+DHIS2_SUBMISSION_TIMEOUT = 20  # # timeout per submission in seconds
 
 SYSTEM_USERNAME = '-mtrack-'
 

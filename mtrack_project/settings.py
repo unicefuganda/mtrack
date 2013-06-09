@@ -137,7 +137,7 @@ INSTALLED_APPS = [
     "mtrack",
     # "debug_toolbar",
 
-    "audit_log",
+    "auditlog",
     "rapidsms",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",

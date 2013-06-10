@@ -84,4 +84,4 @@
   url = git://github.com/unicefuganda/rapidsms_fred_consumer.git
 [submodule "mtrack_project/rapidsms_auditlog"]
 	path = mtrack_project/rapidsms_auditlog
-	url = git@github.com:unicefuganda/rapidsms_auditlog.git
+	url = git://github.com/unicefuganda/rapidsms_auditlog.git

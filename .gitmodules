@@ -85,3 +85,6 @@
 [submodule "mtrack_project/rapidsms_auditlog"]
 	path = mtrack_project/rapidsms_auditlog
 	url = git://github.com/unicefuganda/rapidsms_auditlog.git
+[submodule "mtrack_project/rest_api"]
+	path = mtrack_project/rest_api
+	url = https://github.com/unicefuganda/rest_api.git

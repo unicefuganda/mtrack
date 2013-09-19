@@ -77,6 +77,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_dhis2'))
 sys.path.append(os.path.join(filedir, 'rapidsms_bednets'))
 sys.path.append(os.path.join(filedir, 'rapidsms_fred_consumer'))
 sys.path.append(os.path.join(filedir, 'rapidsms_auditlog'))
+sys.path.append(os.path.join(filedir, 'rest_api'))
 
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #

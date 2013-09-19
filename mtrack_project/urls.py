@@ -12,17 +12,18 @@ from ussd.urls import urlpatterns as ussd_urls
 from django.views.generic.simple import direct_to_template
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     # Example:
     # (r'^my-project/', include('my_project.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-#    url(r'^users/', include('smartmin.users.urls')),
+    # url(r'^users/', include('smartmin.users.urls')),
     (r'^admin/', include(admin.site.urls)),
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
-    url(r'^$', direct_to_template, {'template':'mtrack/dashboard.html'}, name='rapidsms-dashboard'),
+    url(r'^$', direct_to_template, {'template': 'mtrack/dashboard.html'}, name='rapidsms-dashboard'),
     url('^accounts/login', 'rapidsms.views.login'),
     url('^accounts/logout', 'rapidsms.views.logout'),
     # RapidSMS contrib app URLs
@@ -41,11 +42,13 @@ urlpatterns = patterns('',
     (r'^fredconsumer/', include('fred_consumer.urls')),
     (r'^dhis2reporter/', include('dhis2.urls')),
     (r'^auditlog/', include('auditlog.urls')),
-    url(r'^campaign/$', direct_to_template, {'template':'mtrack/campaign.html'}, name='campaign'),
+    (r'^api/', include('api.urls')),
+    url(r'^campaign/$', direct_to_template, {'template': 'mtrack/campaign.html'}, name='campaign'),
 ) + mtrack_urls + router_urls + cvs_urls + healthmodels_urls + contact_urls + ussd_urls + mcdtrac_urls + xform_urls
 
 if settings.DEBUG:
-    urlpatterns += patterns('',
+    urlpatterns += patterns(
+        '',
         # helper URLs file that automatically serves the 'static' folder in
         # INSTALLED_APPS via the Django static media server (NOT for use in
         # production)
@@ -54,4 +57,3 @@ if settings.DEBUG:
 
 from rapidsms_httprouter.router import get_router
 get_router(start_workers=True)
-

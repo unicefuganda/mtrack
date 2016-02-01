@@ -1,15 +1,13 @@
-* * * * * root  /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py check_script_progress -e 7 -l 20
-0 12 1 * * root    /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py send_monthly_reports
-20 03 * * * www /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a
-01 03 * * * www /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py
-#0 1 * * * www	/var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py export_stock_data
-30 04 * * * www cd /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/static/spreadsheets/; /usr/bin/find -type f -name "*.xls" -exec zip $(basename {}).zip {} \;
-*/5 * * * * www /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py trigger_alerts
-30 03 * * * www /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a -t vht
-50 03 * * * www /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -t vht
+# * * * * * root  /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py check_script_progress -e 7 -l 20
+# 0 12 1 * * root    /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py send_monthly_reports
+20 03 * * * www-data /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a
+01 03 * * * www-data /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py
+30 03 * * * www-data /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -a -t vht
+50 03 * * * www-date /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/management/commands/export_reports.py -t vht
+30 04 * * * www-data cd /var/www/prod_mtrack/mtrack/mtrack_project/rapidsms_mtrack/mtrack/static/spreadsheets/; /usr/bin/find -type f -name "*.xls" -exec zip $(basename {}).zip {} \;
+*/5 * * * * www-data /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py trigger_alerts
 #0,30 * * * * root  /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py sched
-15 1 * * * www /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py update_fhd_stats
 */17 * * * * root  /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py count_reports_to_approve
-#* * * * * root  /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py sched
-0 7 * * * www /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py export_fhd_reports -v 2
-30 7 * * * www /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py fhd_close_reports -v 2
+# 15 1 * * * www-data /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py update_fhd_stats
+# 0 7 * * * www-data /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py export_fhd_reports -v 2
+# 30 7 * * * www-data /usr/bin/time /var/www/env/prod_mtrack/bin/python /var/www/prod_mtrack/mtrack/mtrack_project/manage.py fhd_close_reports -v 2
